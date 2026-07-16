@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SkillCard",
+  "description": "Metadata schema for a verified skill. Describes the skill's purpose, inputs, outputs, verification criteria, and training data provenance.",
+  "type": "object",
+  "required": [
+    "skill_id",
+    "version",
+    "name",
+    "description",
+    "author",
+    "license",
+    "source",
+    "tasks",
+    "verifiers",
+    "training_data",
+    "capabilities"
+  ],
+  "properties": {
+    "skill_id": {
+      "type": "string",
+      "description": "Globally unique skill identifier.",
+      "pattern": "^[a-z0-9][a-z0-9\\-]{1,62}[a-z0-9]$",
+      "examples": ["fastapi-api-builder", "react-component-gen", "sql-optimizer"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of this skill definition.",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0", "0.3.1"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable skill name.",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "string",
+      "description": "One-paragraph description of what this skill produces.",
+      "minLength": 20,
+      "maxLength": 500
+    },
+    "author": {
+      "type": "object",
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier.",
+      "examples": ["MIT", "Apache-2.0", "CC-BY-4.0"]
+    },
+    "source": {
+      "type": "object",
+      "required": ["repository", "commit_sha"],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "format": "uri",
+          "description": "GitHub repository URL of the original skill."
+        },
+        "commit_sha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$",
+          "description": "Pinned commit SHA for reproducibility."
+        },
+        "skill_md_path": {
+          "type": "string",
+          "description": "Path to SKILL.md within the repository."
+        }
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "description": "List of task definitions included in this skill.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["task_id", "instruction", "difficulty", "tags"],
+        "properties": {
+          "task_id": {
+            "type": "string",
+            "pattern": "^task_\\d{3}$"
+          },
+          "instruction": {
+            "type": "string",
+            "minLength": 10
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard", "expert"]
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "verifiers": {
+      "type": "array",
+      "description": "Ordered list of verification checks applied to agent outputs.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["check_id", "type", "description", "weight"],
+        "properties": {
+          "check_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{2,30}$"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "syntax",
+              "type_check",
+              "runtime",
+              "test_suite",
+              "lint",
+              "security",
+              "custom"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Weight of this check in the final score (must sum to 1.0)."
+          },
+          "script": {
+            "type": "string",
+            "description": "Relative path to the verifier script."
+          },
+          "timeout_seconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 300,
+            "default": 30
+          }
+        }
+      }
+    },
+    "training_data": {
+      "type": "object",
+      "description": "Provenance and statistics of generated training data.",
+      "properties": {
+        "sft_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of SFT examples generated."
+        },
+        "dpo_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of DPO preference pairs generated."
+        },
+        "grpo_group_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of GRPO rollout groups generated."
+        },
+        "generation_date": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO 8601 date when training data was generated."
+        },
+        "models_used": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of model IDs used to generate training data."
+        },
+        "total_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Estimated total cost of data generation in USD."
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "description": "What this skill tests or trains.",
+      "properties": {
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "code_generation",
+              "api_design",
+              "testing",
+              "documentation",
+              "debugging",
+              "refactoring",
+              "architecture",
+              "devops",
+              "data_engineering",
+              "ml_ops"
+            ]
+          },
+          "description": "Skill domains covered."
+        },
+        "languages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Programming languages involved."
+        },
+        "frameworks": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Frameworks or libraries involved."
+        },
+        "complexity_ceiling": {
+          "type": "string",
+          "enum": ["single_file", "multi_file", "multi_service", "distributed"],
+          "description": "Maximum complexity of tasks in this skill."
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Searchable tags for discoverability."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of skill card creation."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last update."
+    }
+  },
+  "additionalProperties": false
+}

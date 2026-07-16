@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DPOPreferencePair",
+  "description": "A single DPO preference pair: one chosen (preferred) trajectory and one rejected trajectory for the same task. Each line in a .jsonl file conforms to this schema.",
+  "type": "object",
+  "required": ["id", "skill_id", "task", "chosen", "rejected", "metadata"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this preference pair.",
+      "pattern": "^dpo_[a-f0-9]{12}$"
+    },
+    "skill_id": {
+      "type": "string",
+      "description": "Reference to the skill that produced both trajectories."
+    },
+    "task": {
+      "type": "object",
+      "required": ["task_id", "instruction", "context"],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "description": "Stable task identifier within the skill."
+        },
+        "instruction": {
+          "type": "string",
+          "description": "Natural language instruction given to the agent."
+        },
+        "context": {
+          "type": "object",
+          "description": "Additional context provided to the agent.",
+          "additionalProperties": true
+        }
+      }
+    },
+    "chosen": {
+      "type": "object",
+      "description": "The preferred trajectory that passes all verifiers.",
+      "required": ["trajectory", "quality"],
+      "properties": {
+        "trajectory": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["role", "content"],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["system", "user", "assistant", "tool"]
+              },
+              "content": { "type": "string" },
+              "tool_call": {
+                "type": ["object", "null"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "arguments": { "type": "object", "additionalProperties": true }
+                }
+              },
+              "tool_result": {
+                "type": ["object", "null"],
+                "properties": {
+                  "success": { "type": "boolean" },
+                  "output": { "type": "string" },
+                  "error": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "quality": {
+          "type": "object",
+          "properties": {
+            "verdict": {
+              "type": "string",
+              "enum": ["pass", "fail", "partial"]
+            },
+            "score": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0
+            },
+            "checks_passed": { "type": "integer", "minimum": 0 },
+            "checks_total": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+    "rejected": {
+      "type": "object",
+      "description": "The rejected trajectory that fails one or more verifiers.",
+      "required": ["trajectory", "quality", "failure_reasons"],
+      "properties": {
+        "trajectory": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["role", "content"],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["system", "user", "assistant", "tool"]
+              },
+              "content": { "type": "string" },
+              "tool_call": {
+                "type": ["object", "null"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "arguments": { "type": "object", "additionalProperties": true }
+                }
+              },
+              "tool_result": {
+                "type": ["object", "null"],
+                "properties": {
+                  "success": { "type": "boolean" },
+                  "output": { "type": "string" },
+                  "error": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "quality": {
+          "type": "object",
+          "properties": {
+            "verdict": {
+              "type": "string",
+              "enum": ["pass", "fail", "partial"]
+            },
+            "score": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0
+            },
+            "checks_passed": { "type": "integer", "minimum": 0 },
+            "checks_total": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "failure_reasons": {
+          "type": "array",
+          "description": "List of specific reasons the trajectory was rejected.",
+          "items": {
+            "type": "object",
+            "required": ["check_id", "message"],
+            "properties": {
+              "check_id": {
+                "type": "string",
+                "description": "Identifier of the failed verification check."
+              },
+              "message": {
+                "type": "string",
+                "description": "Human-readable explanation of the failure."
+              },
+              "step_index": {
+                "type": ["integer", "null"],
+                "description": "Index in the trajectory where the failure occurred, if applicable."
+              }
+            }
+          }
+        }
+      }
+    },
+    "margin": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Computed quality margin between chosen and rejected (chosen.score - rejected.score)."
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["model_id", "timestamp", "generation_config"],
+      "properties": {
+        "model_id": {
+          "type": "string",
+          "description": "Model that generated both trajectories."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "generation_config": {
+          "type": "object",
+          "description": "Parameters used during trajectory generation.",
+          "properties": {
+            "temperature": { "type": "number", "minimum": 0.0 },
+            "top_p": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "max_tokens": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "deduplication_hash": {
+          "type": "string",
+          "description": "Hash used to deduplicate pairs with identical task + trajectory content."
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
