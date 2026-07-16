@@ -1,36 +1,51 @@
 # SkillGym
 
-Turning public agent skills into verified reinforcement learning training environments.
+A framework for extracting verified training data from public agent skills.
 
-## What This Is
+**Status:** Working paper, not peer-reviewed. Experimental validation planned.
 
-A research paper and framework for compiling SKILL.md files (agent skill definitions hosted on GitHub) into RL training datasets for small language models.
-
-The core thesis: public agent skills already contain the components needed for RL training. SKILL.md is the policy, evals are the task distribution, assertions are the reward function, and GitHub PRs are preference pairs. SkillGym connects these pieces.
-
-## The Paper
+## Paper
 
 **"Public Agent Skills Are Becoming the Next RL Dataset"**
 
-- Full paper: [paper.md](./paper.md)
-- Status: Working paper, July 2026
+Read the full paper: [skillgym-paper.pdf](./skillgym-paper.pdf)
 
-## Key Ideas
+## Method
 
-- Skill infrastructure maps directly to RL environment components
-- Verification against human-authored assertions produces cleaner training signal than synthetic data generation
+1. Grab any SKILL.md from GitHub
+2. Generate evals from the skill's own instructions
+3. Spin two sub-agents: one WITH the skill, one WITHOUT
+4. Run both on the same eval tasks
+5. Score both using the generated evals
+6. Delta = with-skill pass rate minus without-skill pass rate
+7. Better pairs become DPO/GRPO training data
+
+The skill's structure IS the verifier. No synthetic data generation. No external judge models.
+
+## Key Claims
+
+- Any SKILL.md can become a training environment through controlled comparison
+- The performance delta isolates the skill's contribution to model behavior
+- Eval-generated preferences are grounded in task completion, not model judgment
 - Small models (1B-8B params) benefit most from narrow, verified procedural training
-- GitHub's contribution model generates preference data through skill version history
-- Domains with objective verification (code, schemas, operations) work best
 
-## Repository Structure
+## Status
+
+This is a working paper presenting a framework. The following work is planned:
+
+- Proof-of-concept pipeline for 10-20 skills
+- SFT, DPO, and GRPO training experiments
+- Ecosystem survey of skill density and delta distribution
+- Trust and safety testing for adversarial skills
+
+## Repository
 
 ```
-skill-gym-paper/
-  paper.md      Full research paper
-  README.md     This file
+skill-gym/
+  skillgym-paper.pdf   Research paper (PDF)
+  README.md            This file
 ```
 
 ## Contact
 
-4M Labs Research
+4M Labs: hello@4mlabs.io
