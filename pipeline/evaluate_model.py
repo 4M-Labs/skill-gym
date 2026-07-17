@@ -27,9 +27,9 @@ import torch
 from pathlib import Path
 from datetime import datetime
 
-# Import scoring functions from score_outputs_v2
+# Import scoring functions from score_outputs
 sys.path.insert(0, str(Path(__file__).parent))
-from score_outputs_v2 import (
+from score_outputs import (
     compute_criteria_pass_rate,
     compute_specificity,
     compute_actionability,

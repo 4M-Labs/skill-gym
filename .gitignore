@@ -1,20 +1,27 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+*.egg
 
-# Build outputs
-.next/
-out/
-dist/
-build/
+# Models & weights
+pipeline/models/
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.ckpt
+
+# Training artifacts
+wandb/
+mlruns/
 
 # Environment
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # OS
 .DS_Store
@@ -26,16 +33,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-venv/
-
-# Logs
-*.log
-npm-debug.log*
-
-# PDF builds
-*.pdf
+# Internal
+.opencode/
+paper.md

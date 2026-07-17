@@ -6,8 +6,8 @@ Chains all pipeline steps for evaluating and fine-tuning a skill:
   1. Parse skill (extract name, create directories)
   2. Generate evals (call generate_evals.py)
   3. Run comparisons (instructions for subagent agent)
-  4. Score outputs (call score_outputs_v2.py)
-  5. Generate DPO pairs (call generate_dpo_v2.py)
+  4. Score outputs (call score_outputs.py)
+  5. Generate DPO pairs (call generate_dpo.py)
   6. Fine-tune (call train_dpo.py)
   7. Generate report
 
@@ -77,15 +77,15 @@ def check_file(path, label):
 
 def is_step_complete(results_dir, tasks_file):
     """Check if scoring step is already done."""
-    benchmark = results_dir / "benchmark_v2.json"
-    deltas = results_dir / "task_deltas_v2.json"
+    benchmark = results_dir / "benchmark.json"
+    deltas = results_dir / "task_deltas.json"
     return benchmark.exists() and deltas.exists()
 
 
 def is_dpo_complete(dpo_dir):
     """Check if DPO generation is already done."""
-    summary = dpo_dir / "quality_summary_v2.json"
-    dpo_format = dpo_dir / "dpo_format_v2.json"
+    summary = dpo_dir / "quality_summary.json"
+    dpo_format = dpo_dir / "dpo_format.json"
     return summary.exists() and dpo_format.exists()
 
 
@@ -100,8 +100,8 @@ def is_training_complete(models_dir):
 
 
 def read_benchmark_delta(results_dir):
-    """Read mean delta from benchmark_v2.json."""
-    benchmark_path = results_dir / "benchmark_v2.json"
+    """Read mean delta from benchmark.json."""
+    benchmark_path = results_dir / "benchmark.json"
     if not benchmark_path.exists():
         return None
     try:
@@ -112,8 +112,8 @@ def read_benchmark_delta(results_dir):
 
 
 def read_dpo_pair_count(dpo_dir):
-    """Read pair count from quality_summary_v2.json."""
-    summary_path = dpo_dir / "quality_summary_v2.json"
+    """Read pair count from quality_summary.json."""
+    summary_path = dpo_dir / "quality_summary.json"
     if not summary_path.exists():
         return None
     try:
@@ -154,7 +154,7 @@ def generate_report(skill_name, skill_path, results_dir, dpo_dir, models_dir, an
             f"## Scoring Results",
             f"",
             f"- **Mean composite delta**: {delta:+.3f} ({direction})",
-            f"- **Benchmark file**: `results/{skill_name}/benchmark_v2.json`",
+            f"- **Benchmark file**: `results/{skill_name}/benchmark.json`",
             f"",
         ])
     else:
@@ -172,7 +172,7 @@ def generate_report(skill_name, skill_path, results_dir, dpo_dir, models_dir, an
             f"## DPO Training Pairs",
             f"",
             f"- **Total pairs**: {pair_count}",
-            f"- **DPO format file**: `dpo-data/{skill_name}/dpo_format_v2.json`",
+            f"- **DPO format file**: `dpo-data/{skill_name}/dpo_format.json`",
             f"",
         ])
     else:
@@ -333,11 +333,11 @@ def main():
     print("=" * 60)
 
     if is_step_complete(results_dir, tasks_file) and not args.force:
-        print(f"  [SKIP] Scoring already complete: {results_dir / 'benchmark_v2.json'}")
+        print(f"  [SKIP] Scoring already complete: {results_dir / 'benchmark.json'}")
         print(f"         Use --force to rescore")
     else:
         success = run_script(
-            "score_outputs_v2.py",
+            "score_outputs.py",
             [
                 "--results-dir", str(results_dir),
                 "--tasks-file", str(tasks_file),
@@ -373,11 +373,11 @@ def main():
     print("=" * 60)
 
     if is_dpo_complete(dpo_dir) and not args.force:
-        print(f"  [SKIP] DPO pairs already generated: {dpo_dir / 'quality_summary_v2.json'}")
+        print(f"  [SKIP] DPO pairs already generated: {dpo_dir / 'quality_summary.json'}")
         print(f"         Use --force to regenerate")
     else:
         success = run_script(
-            "generate_dpo_v2.py",
+            "generate_dpo.py",
             [
                 "--results-dir", str(results_dir),
                 "--tasks-file", str(tasks_file),
@@ -414,7 +414,7 @@ def main():
         print(f"  [SKIP] Model already trained: {models_dir}")
         print(f"         Use --force to retrain")
     else:
-        dpo_format_file = dpo_dir / "dpo_format_v2.json"
+        dpo_format_file = dpo_dir / "dpo_format.json"
         if not dpo_format_file.exists():
             print(f"  ERROR: DPO format file not found: {dpo_format_file}")
             print(f"  Run DPO generation first.")
@@ -455,10 +455,10 @@ def main():
     print("Files produced:")
 
     check_file(tasks_file, "Tasks")
-    check_file(results_dir / "benchmark_v2.json", "Benchmark")
-    check_file(results_dir / "task_deltas_v2.json", "Task deltas")
-    check_file(dpo_dir / "dpo_format_v2.json", "DPO format")
-    check_file(dpo_dir / "quality_summary_v2.json", "DPO summary")
+    check_file(results_dir / "benchmark.json", "Benchmark")
+    check_file(results_dir / "task_deltas.json", "Task deltas")
+    check_file(dpo_dir / "dpo_format.json", "DPO format")
+    check_file(dpo_dir / "quality_summary.json", "DPO summary")
     check_file(models_dir / "adapter_config.json", "Model adapter")
     check_file(report_path, "Report")
 

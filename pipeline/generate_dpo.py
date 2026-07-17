@@ -37,7 +37,7 @@ def load_tasks(tasks_file):
 
 
 def load_v2_grading(grading_dir, suffix):
-    """Load grading results from score_outputs_v2."""
+    """Load grading results from score_outputs."""
     path = grading_dir / f"grading_{suffix}_v2.json"
     if path.exists():
         return json.loads(path.read_text())
@@ -78,7 +78,7 @@ def main(results_dir, tasks_file, output_dir):
     tasks_map = {t["id"]: t for t in tasks}
     
     # Load deltas if available
-    deltas_path = results_dir / "task_deltas_v2.json"
+    deltas_path = results_dir / "task_deltas.json"
     if deltas_path.exists():
         deltas_data = json.loads(deltas_path.read_text())
         deltas_map = {d["task_id"]: d for d in deltas_data}
