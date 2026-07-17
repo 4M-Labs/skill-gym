@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.5,
+  "actionability": 0.0,
+  "structure": 0.35,
+  "depth": 0.2644444444444444,
+  "voice": 0.7,
+  "composite": 0.29894444444444446,
+  "criteria_grades": [
+    {
+      "text": "Headline for the email capture section is specific (not 'Subscribe to our newsletter')",
+      "passed": true,
+      "evidence": "Term coverage: 57% (4/7)"
+    },
+    {
+      "text": "Copy communicates what subscribers get (not just 'updates')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Specific content examples are mentioned (e.g., 'weekly SEO tips', 'monthly benchmark reports')",
+      "passed": false,
+      "evidence": "Term coverage: 20% (2/10)"
+    },
+    {
+      "text": "CTA communicates the value of subscribing (e.g., 'Get Weekly Marketing Insights' not 'Subscribe')",
+      "passed": false,
+      "evidence": "Term coverage: 38% (3/8)"
+    },
+    {
+      "text": "Copy addresses 'what's in it for me?' for the marketing manager audience",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "At least 2 alternative headlines/CTAs are provided",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Copy is concise (email capture sections should be short)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "No exclamation points",
+      "passed": false,
+      "evidence": "Banned phrase: 'cutting-edge'"
+    },
+    {
+      "text": "Annotations explain why the chosen approach works for this blog audience",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "Copy avoids generic promises ('stay informed', 'get the latest')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    }
+  ],
+  "word_count": 206
+}

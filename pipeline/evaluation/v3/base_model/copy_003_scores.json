@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.7,
+  "actionability": 0.0,
+  "structure": 0.35,
+  "depth": 0.28800000000000003,
+  "voice": 0.6,
+  "composite": 0.3313,
+  "criteria_grades": [
+    {
+      "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "Copy addresses 'which plan is right for me?' anxiety directly",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Each plan has a clear use-case description (not just feature lists)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Recommended plan is indicated with supporting copy",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Copy differentiates from competitors (Canva, Figma, Adobe) without being negative",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "CTAs are plan-specific (e.g., 'Start Team Trial' not generic 'Get Started')",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "Copy includes risk reversal (free trial, money-back guarantee, or migration support)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Headline or section header uses specificity (e.g., pricing starts at or per-user pricing)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/9)"
+    },
+    {
+      "text": "At least one annotation explains why a specific plan is recommended",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "No exclamation points in the copy",
+      "passed": false,
+      "evidence": "Banned phrase: 'streamline'"
+    }
+  ],
+  "word_count": 276
+}

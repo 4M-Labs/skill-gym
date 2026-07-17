@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.1,
+  "specificity": 0.25,
+  "actionability": 0.0,
+  "structure": 0.2,
+  "depth": 0.3616666666666667,
+  "voice": 0.75,
+  "composite": 0.2161666666666667,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, looks like internal communication",
+      "passed": false,
+      "evidence": "Subject: 'Boost Your Sales with SalesEdge \u2013 Accelerate Growth in Our Competitive Market!' (12 words, lowercase=False)"
+    },
+    {
+      "text": "Opening references the hiring (5 new reps) as a trigger, not as flattery",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "Email connects the trigger to the challenge (ramping new reps, maintaining pitch consistency)",
+      "passed": false,
+      "evidence": "Term coverage: 11% (1/9)"
+    },
+    {
+      "text": "One specific proof point (InfraCloud: 40% faster ramp, 12\u00e2\u2020\u201919% demo-to-close)",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "CTA is interest-based and low-friction",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/2)"
+    },
+    {
+      "text": "Email is under 130 words",
+      "passed": false,
+      "evidence": "Word count: 254 (limit: 130)"
+    },
+    {
+      "text": "No AI-telltale patterns",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": true,
+      "evidence": "Contractions found: [\"it's\", \"i'm\"]"
+    },
+    {
+      "text": "Email is structured using one of the 4 frameworks (Observation\u00e2\u2020\u2019Problem\u00e2\u2020\u2019Proof\u00e2\u2020\u2019Ask, Question\u00e2\u2020\u2019Value\u00e2\u2020\u2019Ask, Trigger\u00e2\u2020\u2019Insight\u00e2\u2020\u2019Ask, or Story\u00e2\u2020\u2019Bridge\u00e2\u2020\u2019Ask)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/8)"
+    },
+    {
+      "text": "The framework is applied naturally, not forced",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    }
+  ],
+  "word_count": 254
+}

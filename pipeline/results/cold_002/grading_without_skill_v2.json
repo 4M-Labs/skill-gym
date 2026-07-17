@@ -1,0 +1,71 @@
+{
+  "eval_id": "cold_002",
+  "run_id": "cold_002_without_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no emojis",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email: CloudDeploy to Marcus Rodriguez (HealthBridge)' (8 words, lowercase=False)"
+    },
+    {
+      "text": "Email does NOT open with 'I hope this email finds you well' or 'My name is X'",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "Opening references something specific about HealthBridge (hiring, their product, or their stage)",
+      "passed": true,
+      "evidence": "Term coverage: 55% (6/11)"
+    },
+    {
+      "text": "Email uses contractions (sounds human, not like a template)",
+      "passed": false,
+      "evidence": "Contractions found: []"
+    },
+    {
+      "text": "The personalized observation naturally leads to why you're reaching out",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "One specific proof point is included (MedFlow numbers)",
+      "passed": true,
+      "evidence": "Term coverage: 67% (4/6)"
+    },
+    {
+      "text": "CTA is interest-based and low-friction (e.g., 'Relevant?' or 'Worth a look?')",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "No asking for a 30-minute call",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 286 (limit: 120)"
+    },
+    {
+      "text": "Every sentence serves the reader, not the sender",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "No AI-telltale phrases ('I came across your profile', 'leverage', 'best-in-class')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    }
+  ],
+  "pass_rate": 0.45454545454545453,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.1,
+    "structure": 0.55,
+    "depth": 0.3908333333333333,
+    "voice": 1.0,
+    "composite": 0.505219696969697,
+    "word_count": 286
+  }
+}

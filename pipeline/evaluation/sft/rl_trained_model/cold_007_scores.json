@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.1,
+  "specificity": 0.65,
+  "actionability": 0.1,
+  "structure": 0.2833333333333333,
+  "depth": 0.47318181818181815,
+  "voice": 0.55,
+  "composite": 0.3198181818181818,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+      "passed": false,
+      "evidence": "Subject: 'Leveraging Your Recent LinkedIn Post \u2013 Addressing Key Challenges with Kubernetes' (11 words, lowercase=False)"
+    },
+    {
+      "text": "Opening references the LinkedIn post directly (the research signal)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "Personalization connects the post to the problem (K8s complexity) and naturally leads to why you're reaching out",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Email would NOT make sense if you removed the personalized opening (personalization is essential, not decorative)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "One proof point with specific numbers (50% incident response time, 20 hours/week saved)",
+      "passed": true,
+      "evidence": "Term coverage: 56% (5/9)"
+    },
+    {
+      "text": "CTA is interest-based and low-friction",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/2)"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 491 (limit: 120)"
+    },
+    {
+      "text": "Technical but respectful voice (doesn't oversimplify K8s, but doesn't overload with jargon either)",
+      "passed": false,
+      "evidence": "Term coverage: 11% (1/9)"
+    },
+    {
+      "text": "No AI phrases ('I came across your profile', 'I noticed your post')",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": false,
+      "evidence": "Contractions found: [\"i'm\"]"
+    }
+  ],
+  "word_count": 491
+}

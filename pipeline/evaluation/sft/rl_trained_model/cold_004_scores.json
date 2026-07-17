@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.3,
+  "specificity": 0.8500000000000001,
+  "actionability": 0.225,
+  "structure": 0.0,
+  "depth": 0.4213636363636364,
+  "voice": 0.7,
+  "composite": 0.4021363636363637,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, looks internal/collegial",
+      "passed": false,
+      "evidence": "Subject: 'Leveraging Security Expertise During Scale \u2013 The Next Phase for Your Fintech Success' (13 words, lowercase=False)"
+    },
+    {
+      "text": "Opening connects the SOC 2 achievement to the ongoing challenge (maintaining security culture at scale)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Email leads with their world (the challenge of scaling engineering while staying secure)",
+      "passed": true,
+      "evidence": "Term coverage: 50% (5/10)"
+    },
+    {
+      "text": "One specific proof point is included (PaySecure: 40% incident reduction in 6 months)",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "CTA is interest-based (not 'Can we schedule a call?')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Email uses 'you/your' predominantly over 'I/we'",
+      "passed": true,
+      "evidence": "you/your: 18, I/we/our: 15"
+    },
+    {
+      "text": "Email is under 130 words",
+      "passed": false,
+      "evidence": "Word count: 377 (limit: 130)"
+    },
+    {
+      "text": "No feature dump - focuses on the outcome (fewer incidents, maintained security culture)",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Voice sounds like a peer who understands fintech engineering challenges",
+      "passed": true,
+      "evidence": "Term coverage: 50% (3/6)"
+    },
+    {
+      "text": "No fake urgency ('limited time offer', 'before it's too late')",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    }
+  ],
+  "word_count": 377
+}

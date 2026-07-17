@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_009",
+  "run_id": "copy_009_without_skill",
+  "expectations": [
+    {
+      "text": "Headline for the email capture section is specific (not 'Subscribe to our newsletter')",
+      "passed": true,
+      "evidence": "Term coverage: 71% (5/7)"
+    },
+    {
+      "text": "Copy communicates what subscribers get (not just 'updates')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Specific content examples are mentioned (e.g., 'weekly SEO tips', 'monthly benchmark reports')",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "CTA communicates the value of subscribing (e.g., 'Get Weekly Marketing Insights' not 'Subscribe')",
+      "passed": false,
+      "evidence": "Term coverage: 38% (3/8)"
+    },
+    {
+      "text": "Copy addresses 'what's in it for me?' for the marketing manager audience",
+      "passed": true,
+      "evidence": "Term coverage: 60% (3/5)"
+    },
+    {
+      "text": "At least 2 alternative headlines/CTAs are provided",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Copy is concise (email capture sections should be short)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "No exclamation points",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Annotations explain why the chosen approach works for this blog audience",
+      "passed": false,
+      "evidence": "Missing annotations"
+    },
+    {
+      "text": "Copy avoids generic promises ('stay informed', 'get the latest')",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    }
+  ],
+  "pass_rate": 0.3,
+  "scores": {
+    "specificity": 0.8,
+    "actionability": 0.0,
+    "structure": 0.65,
+    "depth": 0.635,
+    "voice": 1.0,
+    "composite": 0.496,
+    "word_count": 459
+  }
+}

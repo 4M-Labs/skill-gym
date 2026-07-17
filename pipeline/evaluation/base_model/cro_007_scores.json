@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.3,
+  "specificity": 0.65,
+  "actionability": 0.1,
+  "structure": 0.65,
+  "depth": 0.5007142857142857,
+  "voice": 1.0,
+  "composite": 0.47257142857142853,
+  "criteria_grades": [
+    {
+      "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Identifies the form has too many fields for a signup flow (8 fields + checkbox)",
+      "passed": true,
+      "evidence": "Term coverage: 60% (3/5)"
+    },
+    {
+      "text": "Recommends reducing to essential fields (email, password, name) and collecting the rest post-signup",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Notes the headline 'Create Your Account' is functional but not motivating",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "Recommends adding a benefit-oriented headline or subheadline",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Identifies the absence of social proof near the signup form",
+      "passed": true,
+      "evidence": "Term coverage: 60% (3/5)"
+    },
+    {
+      "text": "Recommends adding a free trial mention or risk reversal near the CTA",
+      "passed": true,
+      "evidence": "Term coverage: 60% (3/5)"
+    },
+    {
+      "text": "Provides at least 2 alternative CTA buttons (not just 'Create Account')",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Suggests splitting into multi-step form if many fields are truly required",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "At least one recommendation addresses reducing perceived commitment",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    }
+  ],
+  "word_count": 352
+}

@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.0,
+  "specificity": 0.4,
+  "actionability": 0.15,
+  "structure": 0.15,
+  "depth": 0.352,
+  "voice": 0.95,
+  "composite": 0.26270000000000004,
+  "criteria_grades": [
+    {
+      "text": "Output contains Headline, Subheadline, CTA, and at least 2 headline alternatives",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Headline addresses the emotional pain (guilt, worry about pet) not just the service",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "Copy communicates trust and safety (background checks, certification, video meet) without sounding clinical",
+      "passed": false,
+      "evidence": "Term coverage: 27% (3/11)"
+    },
+    {
+      "text": "Subheadline adds specificity (mentions a verification detail or the meet-and-greet feature)",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "CTA communicates the outcome (e.g., 'Find My Pet Sitter' not 'Browse Sitters')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Copy uses customer language and emotional resonance ('peace of mind', 'like family')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/8)"
+    },
+    {
+      "text": "At least one headline alternative uses the '{Achieve outcome} without {pain point}' formula",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "No exclamation points",
+      "passed": false,
+      "evidence": "Contains exclamation points"
+    },
+    {
+      "text": "Active voice used throughout",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Annotations explain the emotional approach chosen for this audience",
+      "passed": false,
+      "evidence": "Missing annotations"
+    }
+  ],
+  "word_count": 202
+}

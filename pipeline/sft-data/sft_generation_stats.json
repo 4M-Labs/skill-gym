@@ -1,0 +1,19 @@
+{
+  "total": 30,
+  "found": 30,
+  "missing": 0,
+  "by_skill": {
+    "cro": {
+      "found": 10,
+      "missing": 0
+    },
+    "copywriting": {
+      "found": 10,
+      "missing": 0
+    },
+    "cold-email": {
+      "found": 10,
+      "missing": 0
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "eval_id": "cold_009",
+  "run_id": "cold_009_without_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email: DevMonitor \u2192 CodeNest' (6 words, lowercase=False)"
+    },
+    {
+      "text": "Email acknowledges the bootstrapped context (small team, limited resources, no dedicated DevOps)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "No enterprise language ('scalability', 'enterprise-grade', 'SLA', 'dedicated support team')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Proof point is relevant to a small team (caught issues early, saved revenue)",
+      "passed": false,
+      "evidence": "Term coverage: 11% (1/9)"
+    },
+    {
+      "text": "CTA is extremely low-friction (one-line reply)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Email is under 100 words",
+      "passed": false,
+      "evidence": "Word count: 195 (limit: 100)"
+    },
+    {
+      "text": "Voice is direct and no-BS (no corporate polish)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": true,
+      "evidence": "Contractions found: [\"don't\", \"can't\", \"you're\"]"
+    },
+    {
+      "text": "Does not ask for a meeting",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/1)"
+    },
+    {
+      "text": "Every sentence serves the reader (bootstrapped founder's time is precious)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    }
+  ],
+  "pass_rate": 0.2
+}

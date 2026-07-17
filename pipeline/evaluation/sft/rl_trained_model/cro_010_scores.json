@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.95,
+  "actionability": 0.1,
+  "structure": 0.2,
+  "depth": 0.42000000000000004,
+  "voice": 1.0,
+  "composite": 0.43200000000000005,
+  "criteria_grades": [
+    {
+      "text": "Output follows the 4-section CRO format",
+      "passed": true,
+      "evidence": "Term coverage: 50% (1/2)"
+    },
+    {
+      "text": "Evaluates the headline as strong and specific (includes 'free' and concrete outcome)",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "Notes the form is well-optimized with only 4 fields (low friction)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Recommends adding more social proof (customer count, specific results, testimonials)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Suggests adding a preview of what the audit delivers (sample report, expected findings)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Recommends adding a guarantee or risk reversal beyond 'no spam'",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "Provides at least 2 test ideas specific to this lead gen form",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "At least one copy alternative for the CTA that adds specificity or urgency",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Recommends addressing the 'what happens after I submit?' question",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Notes the page handles the traffic source well (B2B, senior roles, specific value prop)",
+      "passed": false,
+      "evidence": "Term coverage: 40% (4/10)"
+    }
+  ],
+  "word_count": 408
+}

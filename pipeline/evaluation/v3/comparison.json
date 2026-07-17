@@ -1,0 +1,391 @@
+{
+  "base": {
+    "criteria_pass_rate": {
+      "mean": 0.11636363636363638,
+      "min": 0.0,
+      "max": 0.6
+    },
+    "specificity": {
+      "mean": 0.5644444444444444,
+      "min": 0.25,
+      "max": 0.95
+    },
+    "actionability": {
+      "mean": 0.04555555555555556,
+      "min": 0.0,
+      "max": 0.225
+    },
+    "structure": {
+      "mean": 0.3288888888888889,
+      "min": 0.0,
+      "max": 0.65
+    },
+    "depth": {
+      "mean": 0.4098371721578284,
+      "min": 0.2525,
+      "max": 0.6592479674796748
+    },
+    "voice": {
+      "mean": 0.696,
+      "min": 0.050000000000000086,
+      "max": 1.0
+    },
+    "composite": {
+      "mean": 0.31100795964002526,
+      "min": 0.15499999999999997,
+      "max": 0.559628787878788
+    }
+  },
+  "fine_tuned": {
+    "criteria_pass_rate": {
+      "mean": 0.1290909090909091,
+      "min": 0.0,
+      "max": 0.3
+    },
+    "specificity": {
+      "mean": 0.5700000000000001,
+      "min": 0.25,
+      "max": 0.9
+    },
+    "actionability": {
+      "mean": 0.0375,
+      "min": 0.0,
+      "max": 0.15
+    },
+    "structure": {
+      "mean": 0.3238888888888889,
+      "min": 0.0,
+      "max": 0.65
+    },
+    "depth": {
+      "mean": 0.40521476202437884,
+      "min": 0.23833333333333334,
+      "max": 0.6411842105263158
+    },
+    "voice": {
+      "mean": 0.7503333333333333,
+      "min": 0.15,
+      "max": 1.0
+    },
+    "composite": {
+      "mean": 0.31791087014183184,
+      "min": 0.1479,
+      "max": 0.49576000000000003
+    }
+  },
+  "deltas": {
+    "criteria_pass_rate": 0.012727272727272712,
+    "specificity": 0.005555555555555647,
+    "actionability": -0.008055555555555559,
+    "structure": -0.0050000000000000044,
+    "depth": -0.00462241013344955,
+    "voice": 0.054333333333333345,
+    "composite": 0.006902910501806581
+  },
+  "per_task": [
+    {
+      "task_id": "cro_001",
+      "skill": "cro",
+      "base_composite": 0.3496388888888889,
+      "ft_composite": 0.4207071428571429,
+      "delta": 0.071068253968254,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_002",
+      "skill": "cro",
+      "base_composite": 0.4742826086956522,
+      "ft_composite": 0.45115476190476195,
+      "delta": -0.02312784679089025,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_003",
+      "skill": "cro",
+      "base_composite": 0.559628787878788,
+      "ft_composite": 0.40035714285714286,
+      "delta": -0.15927164502164515,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_004",
+      "skill": "cro",
+      "base_composite": 0.4509444444444445,
+      "ft_composite": 0.47745945945945945,
+      "delta": 0.026515015015014964,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_005",
+      "skill": "cro",
+      "base_composite": 0.3773425925925926,
+      "ft_composite": 0.32385294117647057,
+      "delta": -0.05348965141612205,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_006",
+      "skill": "cro",
+      "base_composite": 0.32882017543859654,
+      "ft_composite": 0.38528508771929826,
+      "delta": 0.05646491228070172,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_007",
+      "skill": "cro",
+      "base_composite": 0.4947166666666667,
+      "ft_composite": 0.4805545977011494,
+      "delta": -0.014162068965517305,
+      "base_time": 0,
+      "ft_time": 0
+    },
+    {
+      "task_id": "cro_008",
+      "skill": "cro",
+      "base_composite": 0.324452380952381,
+      "ft_composite": 0.49576000000000003,
+      "delta": 0.17130761904761904,
+      "base_time": 0,
+      "ft_time": 133.66437768936157
+    },
+    {
+      "task_id": "cro_009",
+      "skill": "cro",
+      "base_composite": 0.29742647058823535,
+      "ft_composite": 0.42371296296296307,
+      "delta": 0.12628649237472772,
+      "base_time": 0,
+      "ft_time": 90.62017321586609
+    },
+    {
+      "task_id": "cro_010",
+      "skill": "cro",
+      "base_composite": 0.45795833333333336,
+      "ft_composite": 0.45999999999999996,
+      "delta": 0.0020416666666666083,
+      "base_time": 0,
+      "ft_time": 95.67008566856384
+    },
+    {
+      "task_id": "copy_001",
+      "skill": "copywriting",
+      "base_composite": 0.3281145833333334,
+      "ft_composite": 0.17483333333333334,
+      "delta": -0.15328125000000004,
+      "base_time": 0,
+      "ft_time": 29.27709436416626
+    },
+    {
+      "task_id": "copy_002",
+      "skill": "copywriting",
+      "base_composite": 0.43633333333333335,
+      "ft_composite": 0.3088333333333334,
+      "delta": -0.12749999999999995,
+      "base_time": 0,
+      "ft_time": 35.40359449386597
+    },
+    {
+      "task_id": "copy_003",
+      "skill": "copywriting",
+      "base_composite": 0.3313,
+      "ft_composite": 0.3830142857142857,
+      "delta": 0.05171428571428571,
+      "base_time": 0,
+      "ft_time": 126.31766176223755
+    },
+    {
+      "task_id": "copy_004",
+      "skill": "copywriting",
+      "base_composite": 0.31569298245614036,
+      "ft_composite": 0.30714102564102563,
+      "delta": -0.008551956815114725,
+      "base_time": 0,
+      "ft_time": 64.49808597564697
+    },
+    {
+      "task_id": "copy_005",
+      "skill": "copywriting",
+      "base_composite": 0.20500000000000002,
+      "ft_composite": 0.20983333333333332,
+      "delta": 0.004833333333333301,
+      "base_time": 0,
+      "ft_time": 25.350085020065308
+    },
+    {
+      "task_id": "copy_006",
+      "skill": "copywriting",
+      "base_composite": 0.3917581300813008,
+      "ft_composite": 0.28561111111111115,
+      "delta": -0.10614701897018963,
+      "base_time": 0,
+      "ft_time": 54.9766583442688
+    },
+    {
+      "task_id": "copy_007",
+      "skill": "copywriting",
+      "base_composite": 0.21664285714285714,
+      "ft_composite": 0.3963833333333333,
+      "delta": 0.17974047619047617,
+      "base_time": 0,
+      "ft_time": 87.42242789268494
+    },
+    {
+      "task_id": "copy_008",
+      "skill": "copywriting",
+      "base_composite": 0.2518,
+      "ft_composite": 0.3327745098039216,
+      "delta": 0.08097450980392157,
+      "base_time": 0,
+      "ft_time": 45.61107134819031
+    },
+    {
+      "task_id": "copy_009",
+      "skill": "copywriting",
+      "base_composite": 0.3710833333333333,
+      "ft_composite": 0.24488461538461542,
+      "delta": -0.1261987179487179,
+      "base_time": 35.12277293205261,
+      "ft_time": 40.39196753501892
+    },
+    {
+      "task_id": "copy_010",
+      "skill": "copywriting",
+      "base_composite": 0.26270000000000004,
+      "ft_composite": 0.2604375,
+      "delta": -0.002262500000000056,
+      "base_time": 25.390250205993652,
+      "ft_time": 44.05270218849182
+    },
+    {
+      "task_id": "cold_001",
+      "skill": "cold-email",
+      "base_composite": 0.2062857142857143,
+      "ft_composite": 0.2952272727272727,
+      "delta": 0.08894155844155843,
+      "base_time": 39.06096792221069,
+      "ft_time": 53.23762607574463
+    },
+    {
+      "task_id": "cold_002",
+      "skill": "cold-email",
+      "base_composite": 0.15499999999999997,
+      "ft_composite": 0.169875,
+      "delta": 0.014875000000000027,
+      "base_time": 34.750646114349365,
+      "ft_time": 48.82192063331604
+    },
+    {
+      "task_id": "cold_003",
+      "skill": "cold-email",
+      "base_composite": 0.17517171717171717,
+      "ft_composite": 0.2986083916083917,
+      "delta": 0.12343667443667453,
+      "base_time": 13.620240449905396,
+      "ft_time": 71.99991011619568
+    },
+    {
+      "task_id": "cold_004",
+      "skill": "cold-email",
+      "base_composite": 0.3375208333333333,
+      "ft_composite": 0.21686666666666665,
+      "delta": -0.12065416666666667,
+      "base_time": 40.15612483024597,
+      "ft_time": 48.09852457046509
+    },
+    {
+      "task_id": "cold_005",
+      "skill": "cold-email",
+      "base_composite": 0.2159385964912281,
+      "ft_composite": 0.2714313725490196,
+      "delta": 0.055492776057791515,
+      "base_time": 37.26854729652405,
+      "ft_time": 68.892404794693
+    },
+    {
+      "task_id": "cold_006",
+      "skill": "cold-email",
+      "base_composite": 0.22315384615384615,
+      "ft_composite": 0.1479,
+      "delta": -0.07525384615384614,
+      "base_time": 31.627137660980225,
+      "ft_time": 38.51888704299927
+    },
+    {
+      "task_id": "cold_007",
+      "skill": "cold-email",
+      "base_composite": 0.2054285714285714,
+      "ft_composite": 0.2562820512820513,
+      "delta": 0.05085347985347988,
+      "base_time": 33.30923891067505,
+      "ft_time": 47.12550449371338
+    },
+    {
+      "task_id": "cold_008",
+      "skill": "cold-email",
+      "base_composite": 0.1656862745098039,
+      "ft_composite": 0.2571282051282051,
+      "delta": 0.09144193061840122,
+      "base_time": 38.40829038619995,
+      "ft_time": 38.55671668052673
+    },
+    {
+      "task_id": "cold_009",
+      "skill": "cold-email",
+      "base_composite": 0.22766666666666668,
+      "ft_composite": 0.18525000000000003,
+      "delta": -0.04241666666666666,
+      "base_time": 29.65276265144348,
+      "ft_time": 48.6151123046875
+    },
+    {
+      "task_id": "cold_010",
+      "skill": "cold-email",
+      "base_composite": 0.19274999999999998,
+      "ft_composite": 0.2161666666666667,
+      "delta": 0.023416666666666724,
+      "base_time": 26.60975217819214,
+      "ft_time": 48.634941816329956
+    }
+  ],
+  "per_skill": {
+    "copywriting": {
+      "base_mean": 0.31104252196802984,
+      "ft_mean": 0.2903746380988293,
+      "delta": -0.020667883869200543,
+      "n_tasks": 10,
+      "positive_deltas": 4
+    },
+    "cold-email": {
+      "base_mean": 0.2104602220040881,
+      "ft_mean": 0.2314735626628274,
+      "delta": 0.021013340658739305,
+      "n_tasks": 10,
+      "positive_deltas": 7
+    },
+    "cro": {
+      "base_mean": 0.4115211349479579,
+      "ft_mean": 0.43188440966383884,
+      "delta": 0.020363274715880952,
+      "n_tasks": 10,
+      "positive_deltas": 6
+    }
+  },
+  "overall": {
+    "base_mean": 0.31100795964002526,
+    "ft_mean": 0.31791087014183184,
+    "delta": 0.006902910501806581,
+    "base_total_time": 384.9767315387726,
+    "ft_total_time": 1385.7575340270996,
+    "n_tasks": 30,
+    "positive_deltas": 17,
+    "negative_deltas": 13,
+    "neutral_deltas": 0
+  }
+}

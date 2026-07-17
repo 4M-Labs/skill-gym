@@ -1,0 +1,67 @@
+{
+  "criteria_pass_rate": 0.0,
+  "specificity": 0.35,
+  "actionability": 0.0,
+  "structure": 0.0,
+  "depth": 0.35,
+  "voice": 0.5,
+  "composite": 0.15499999999999997,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no emojis",
+      "passed": false,
+      "evidence": "Subject: 'Simplify Your Infrastructure with CloudDeploy \u2013 Revolutionizing Deployment Efficiency for Small Teams!' (12 words, lowercase=False)"
+    },
+    {
+      "text": "Email does NOT open with 'I hope this email finds you well' or 'My name is X'",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Opening references something specific about HealthBridge (hiring, their product, or their stage)",
+      "passed": false,
+      "evidence": "Term coverage: 27% (3/11)"
+    },
+    {
+      "text": "Email uses contractions (sounds human, not like a template)",
+      "passed": false,
+      "evidence": "Contractions found: []"
+    },
+    {
+      "text": "The personalized observation naturally leads to why you're reaching out",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "One specific proof point is included (MedFlow numbers)",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "CTA is interest-based and low-friction (e.g., 'Relevant?' or 'Worth a look?')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "No asking for a 30-minute call",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 280 (limit: 120)"
+    },
+    {
+      "text": "Every sentence serves the reader, not the sender",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "No AI-telltale phrases ('I came across your profile', 'leverage', 'best-in-class')",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    }
+  ],
+  "word_count": 280
+}

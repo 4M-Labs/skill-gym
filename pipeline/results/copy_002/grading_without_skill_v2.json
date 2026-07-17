@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_002",
+  "run_id": "copy_002_without_skill",
+  "expectations": [
+    {
+      "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+      "passed": false,
+      "evidence": "Missing annotations"
+    },
+    {
+      "text": "Headline matches or connects to the ad hook ('what's for dinner' / dinner stress)",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Copy addresses the specific pain (decision fatigue, time, overwhelm) not just features",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "Benefits are specific (e.g., 'Save 3 hours a week on meal planning' not 'Save time')",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "CTA is action-oriented and communicates what they get (e.g., 'Start My Meal Plan' not 'Sign Up')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "Copy uses active voice throughout",
+      "passed": false,
+      "evidence": "Term coverage: 33% (1/3)"
+    },
+    {
+      "text": "No marketing buzzwords ('revolutionary', 'game-changing', 'cutting-edge')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Subheadline is 1-2 sentences max and adds specificity",
+      "passed": false,
+      "evidence": "Term coverage: 33% (1/3)"
+    },
+    {
+      "text": "At least one section uses an analogy or concrete example",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Annotations cite specific copywriting principles for key decisions",
+      "passed": false,
+      "evidence": "Missing annotations"
+    }
+  ],
+  "pass_rate": 0.1,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.06666666666666667,
+    "structure": 0.65,
+    "depth": 0.7707798165137615,
+    "voice": 0.85,
+    "composite": 0.44791131498470954,
+    "word_count": 1044
+  }
+}

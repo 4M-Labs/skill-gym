@@ -1,0 +1,2057 @@
+[
+  {
+    "task_id": "cro_001",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.4,
+      "specificity": 1.0,
+      "actionability": 0.0,
+      "structure": 0.2,
+      "depth": 0.5138461538461538,
+      "voice": 0.6699999999999999,
+      "composite": 0.44838461538461544,
+      "criteria_grades": [
+        {
+          "text": "Output contains a 'Quick Wins' section",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Output contains a 'High-Impact Changes' section",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Output contains a 'Test Ideas' section",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Output contains a 'Copy Alternatives' section with 2-3 headline alternatives",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Identifies the headline as too vague/generic (not specific or outcome-focused)",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Identifies the CTA 'Sign Up' as weak and suggests a stronger alternative",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Identifies the 12-field form as a friction point and recommends reducing fields",
+          "passed": false,
+          "evidence": "Term coverage: 43% (3/7)"
+        },
+        {
+          "text": "Notes the absence of trust signals (testimonials, logos, case studies)",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Recommends adding social proof near the CTA",
+          "passed": true,
+          "evidence": "Term coverage: 75% (3/4)"
+        },
+        {
+          "text": "Provides at least one specific CTA copy alternative using the [Action Verb] + [What They Get] pattern",
+          "passed": true,
+          "evidence": "Has alternatives"
+        }
+      ],
+      "word_count": 639
+    },
+    "gen_time_seconds": 0,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_001_output.md"
+  },
+  {
+    "task_id": "cro_002",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 1.0,
+      "actionability": 0.30000000000000004,
+      "structure": 0.2,
+      "depth": 0.3458333333333333,
+      "voice": 0.8899999999999999,
+      "composite": 0.48858333333333337,
+      "criteria_grades": [
+        {
+          "text": "Output is structured with Quick Wins, High-Impact Changes, Test Ideas, and Copy Alternatives sections",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Identifies that the headline is feature-oriented rather than benefit-oriented",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Recommends connecting features to customer outcomes/benefits",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Notes the absence of a guarantee or risk reversal near the CTA",
+          "passed": true,
+          "evidence": "Term coverage: 50% (2/4)"
+        },
+        {
+          "text": "Recommends surfacing written testimonials from the 87 reviews",
+          "passed": true,
+          "evidence": "Term coverage: 60% (3/5)"
+        },
+        {
+          "text": "Suggests adding a comparison section or addressing 'why this over competitors'",
+          "passed": true,
+          "evidence": "Term coverage: 50% (3/6)"
+        },
+        {
+          "text": "Provides alternative headline(s) that are outcome-focused",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Identifies that 12 technical specs may overwhelm non-technical buyers",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "Recommends FAQ section to handle objections",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "At least one recommendation addresses the pricing page anxiety (is $299 worth it?)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        }
+      ],
+      "word_count": 575
+    },
+    "gen_time_seconds": 0,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_002_output.md"
+  },
+  {
+    "task_id": "cro_003",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.4,
+      "specificity": 0.5833333333333333,
+      "actionability": 0.0,
+      "structure": 0.65,
+      "depth": 0.7293181818181818,
+      "voice": 1.0,
+      "composite": 0.48709848484848484,
+      "criteria_grades": [
+        {
+          "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Identifies 'Learn More' as a weak, low-commitment CTA and suggests alternatives",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Notes the homepage leads with company story instead of visitor value",
+          "passed": true,
+          "evidence": "Term coverage: 50% (4/8)"
+        },
+        {
+          "text": "Recommends adding product screenshots or a demo video above the fold",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "Flags the absence of social proof (logos, testimonials, case studies)",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Suggests adding a clear value proposition that differentiates from competitors",
+          "passed": true,
+          "evidence": "Term coverage: 86% (6/7)"
+        },
+        {
+          "text": "Recommends adding pricing or a 'See Pricing' CTA for research-stage visitors",
+          "passed": true,
+          "evidence": "Term coverage: 50% (3/6)"
+        },
+        {
+          "text": "Provides at least 2 alternative headlines using outcome-focused or specificity patterns",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Notes that 'Contact Us' is a high-friction CTA for cold visitors",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "At least one recommendation addresses the mixed traffic source context",
+          "passed": true,
+          "evidence": "Term coverage: 86% (6/7)"
+        }
+      ],
+      "word_count": 633
+    },
+    "gen_time_seconds": 0,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_003_output.md"
+  },
+  {
+    "task_id": "cro_004",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.5,
+      "specificity": 1.0,
+      "actionability": 0.30000000000000004,
+      "structure": 0.85,
+      "depth": 0.6946111111111111,
+      "voice": 0.94,
+      "composite": 0.675961111111111,
+      "criteria_grades": [
+        {
+          "text": "Output follows the 4-section format (Quick Wins, High-Impact Changes, Test Ideas, Copy Alternatives)",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Identifies that the page lacks guidance on 'which plan is right for me'",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Recommends adding plan descriptions or use-case matching (e.g., 'Best for solo developers')",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Notes the absence of annual pricing toggle and suggests adding one",
+          "passed": true,
+          "evidence": "Term coverage: 57% (4/7)"
+        },
+        {
+          "text": "Identifies 'Get Started' as a generic CTA and provides plan-specific alternatives",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Recommends adding a guarantee or risk reversal",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "Suggests adding social proof (customer count, testimonials, logos) near pricing",
+          "passed": false,
+          "evidence": "Term coverage: 22% (2/9)"
+        },
+        {
+          "text": "Provides at least 2 CTA alternatives that communicate value (not just action)",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Recommends adding an FAQ section addressing common pricing objections",
+          "passed": true,
+          "evidence": "Term coverage: 57% (4/7)"
+        },
+        {
+          "text": "At least one test idea specifically targets the pricing page layout or comparison flow",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        }
+      ],
+      "word_count": 707
+    },
+    "gen_time_seconds": 0,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_004_output.md"
+  },
+  {
+    "task_id": "cro_005",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.4,
+      "specificity": 0.75,
+      "actionability": 0.1,
+      "structure": 0.2,
+      "depth": 0.3611904761904762,
+      "voice": 0.91,
+      "composite": 0.4271190476190477,
+      "criteria_grades": [
+        {
+          "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Identifies that a single bottom-of-post CTA misses multiple stopping points",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Recommends adding inline CTAs at natural content breaks (e.g., after benefits 3, 6, 9)",
+          "passed": true,
+          "evidence": "Term coverage: 56% (5/9)"
+        },
+        {
+          "text": "Suggests a content-specific lead magnet (e.g., meditation starter guide, daily meditation checklist)",
+          "passed": false,
+          "evidence": "Term coverage: 40% (4/10)"
+        },
+        {
+          "text": "Notes the generic newsletter signup and suggests making it topic-relevant",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "Recommends a contextual CTA that matches the blog post topic (not generic app download)",
+          "passed": false,
+          "evidence": "Term coverage: 17% (1/6)"
+        },
+        {
+          "text": "Provides at least 2 alternative CTA copy options tied to meditation benefits",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Suggests adding a 'Related Posts' section to increase session depth",
+          "passed": false,
+          "evidence": "Term coverage: 38% (3/8)"
+        },
+        {
+          "text": "At least one recommendation addresses capturing visitors who aren't ready to download yet",
+          "passed": false,
+          "evidence": "Term coverage: 38% (3/8)"
+        },
+        {
+          "text": "CTA alternatives avoid weak patterns like 'Learn More' or 'Click Here'",
+          "passed": true,
+          "evidence": "Has alternatives"
+        }
+      ],
+      "word_count": 467
+    },
+    "gen_time_seconds": 0,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_005_output.md"
+  },
+  {
+    "task_id": "cro_006",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.25,
+      "actionability": 0.0,
+      "structure": 0.2,
+      "depth": 0.5,
+      "voice": 0.94,
+      "composite": 0.29900000000000004,
+      "criteria_grades": [
+        {
+          "text": "Output follows the 4-section CRO format",
+          "passed": true,
+          "evidence": "Term coverage: 50% (1/2)"
+        },
+        {
+          "text": "Identifies message mismatch between the ad ('lose 10 pounds in 30 days') and the landing page headline",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "Recommends headline that mirrors the ad's promise or addresses the specific outcome",
+          "passed": true,
+          "evidence": "Term coverage: 57% (4/7)"
+        },
+        {
+          "text": "Notes the navigation bar undermines single-page focus for paid traffic",
+          "passed": true,
+          "evidence": "Term coverage: 50% (3/6)"
+        },
+        {
+          "text": "Recommends removing or simplifying navigation for this paid landing page",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Flags the absence of proof for the '10 pounds in 30 days' claim (testimonials, before/after, case studies)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "Identifies 'Welcome to FitTrack Pro' as a weak, company-centric headline",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "Provides at least 2 alternative headlines using the outcome-focused or specificity pattern",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Recommends adding a risk reversal (free trial, money-back guarantee)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "At least one test idea addresses the message match or navigation removal",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        }
+      ],
+      "word_count": 351
+    },
+    "gen_time_seconds": 104.19694089889526,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_006_output.md"
+  },
+  {
+    "task_id": "cro_007",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.6000000000000001,
+      "actionability": 0.1,
+      "structure": 0.0,
+      "depth": 0.27166666666666667,
+      "voice": 1.0,
+      "composite": 0.2921666666666667,
+      "criteria_grades": [
+        {
+          "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Identifies the form has too many fields for a signup flow (8 fields + checkbox)",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Recommends reducing to essential fields (email, password, name) and collecting the rest post-signup",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/9)"
+        },
+        {
+          "text": "Notes the headline 'Create Your Account' is functional but not motivating",
+          "passed": false,
+          "evidence": "Term coverage: 17% (1/6)"
+        },
+        {
+          "text": "Recommends adding a benefit-oriented headline or subheadline",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Identifies the absence of social proof near the signup form",
+          "passed": true,
+          "evidence": "Term coverage: 60% (3/5)"
+        },
+        {
+          "text": "Recommends adding a free trial mention or risk reversal near the CTA",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Provides at least 2 alternative CTA buttons (not just 'Create Account')",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Suggests splitting into multi-step form if many fields are truly required",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "At least one recommendation addresses reducing perceived commitment",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        }
+      ],
+      "word_count": 146
+    },
+    "gen_time_seconds": 41.015809535980225,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_007_output.md"
+  },
+  {
+    "task_id": "cro_008",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.55,
+      "actionability": 0.0,
+      "structure": 0.0,
+      "depth": 0.4829411764705882,
+      "voice": 0.7,
+      "composite": 0.25329411764705884,
+      "criteria_grades": [
+        {
+          "text": "Output follows the 4-section CRO format",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Identifies that the headline is feature-named rather than benefit-oriented",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Recommends rewriting headline to connect feature to customer outcome",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "Notes the technical jargon (NLP, transformer architecture) is inappropriate for the audience",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "Recommends replacing technical explanation with user benefit language",
+          "passed": false,
+          "evidence": "Term coverage: 17% (1/6)"
+        },
+        {
+          "text": "Suggests adding before/after examples showing actual grammar corrections",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "Recommends use cases (e.g., 'Perfect for emails, reports, and proposals')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "Provides at least 2 alternative headlines using the feature \u00e2\u2020\u2019 benefit \u00e2\u2020\u2019 outcome pattern",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Notes the page lacks a clear path to try or buy beyond the single CTA",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "At least one recommendation addresses making the feature tangible through examples",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        }
+      ],
+      "word_count": 396
+    },
+    "gen_time_seconds": 164.08524751663208,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_008_output.md"
+  },
+  {
+    "task_id": "cro_009",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.3,
+      "actionability": 0.0,
+      "structure": 0.2,
+      "depth": 0.5,
+      "voice": 0.82,
+      "composite": 0.29700000000000004,
+      "criteria_grades": [
+        {
+          "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Identifies that the page tells company facts but doesn't connect mission to client benefit",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "Recommends leading with client outcomes instead of company milestones",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Notes the absence of proof points (performance data, client testimonials, AUM growth story)",
+          "passed": false,
+          "evidence": "Term coverage: 30% (3/10)"
+        },
+        {
+          "text": "Recommends adding a differentiator section ('Why GreenLeaf vs. other firms')",
+          "passed": false,
+          "evidence": "Term coverage: 38% (3/8)"
+        },
+        {
+          "text": "Identifies that 'Contact Us' is a high-friction CTA for an about page",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "Recommends a softer CTA or next step (e.g., 'See Our Approach', 'Download Our Impact Report')",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Provides at least 2 alternative headlines that connect to investor value",
+          "passed": true,
+          "evidence": "Has alternatives"
+        },
+        {
+          "text": "Suggests adding client logos or advisory board credentials for trust",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "At least one recommendation addresses the financial advisor referral context",
+          "passed": true,
+          "evidence": "Term coverage: 71% (5/7)"
+        }
+      ],
+      "word_count": 327
+    },
+    "gen_time_seconds": 205.09844398498535,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_009_output.md"
+  },
+  {
+    "task_id": "cro_010",
+    "skill": "cro",
+    "scores": {
+      "criteria_pass_rate": 0.2,
+      "specificity": 0.95,
+      "actionability": 0.1,
+      "structure": 0.2,
+      "depth": 0.42000000000000004,
+      "voice": 1.0,
+      "composite": 0.43200000000000005,
+      "criteria_grades": [
+        {
+          "text": "Output follows the 4-section CRO format",
+          "passed": true,
+          "evidence": "Term coverage: 50% (1/2)"
+        },
+        {
+          "text": "Evaluates the headline as strong and specific (includes 'free' and concrete outcome)",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Notes the form is well-optimized with only 4 fields (low friction)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        },
+        {
+          "text": "Recommends adding more social proof (customer count, specific results, testimonials)",
+          "passed": false,
+          "evidence": "Term coverage: 22% (2/9)"
+        },
+        {
+          "text": "Suggests adding a preview of what the audit delivers (sample report, expected findings)",
+          "passed": false,
+          "evidence": "Term coverage: 22% (2/9)"
+        },
+        {
+          "text": "Recommends adding a guarantee or risk reversal beyond 'no spam'",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "Provides at least 2 test ideas specific to this lead gen form",
+          "passed": true,
+          "evidence": "Term coverage: 50% (2/4)"
+        },
+        {
+          "text": "At least one copy alternative for the CTA that adds specificity or urgency",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Recommends addressing the 'what happens after I submit?' question",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Notes the page handles the traffic source well (B2B, senior roles, specific value prop)",
+          "passed": false,
+          "evidence": "Term coverage: 40% (4/10)"
+        }
+      ],
+      "word_count": 408
+    },
+    "gen_time_seconds": 175.15323328971863,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cro_010_output.md"
+  },
+  {
+    "task_id": "copy_001",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.0,
+      "specificity": 0.5333333333333333,
+      "actionability": 0.0,
+      "structure": 0.0,
+      "depth": 0.3333333333333333,
+      "voice": 0.95,
+      "composite": 0.23500000000000001,
+      "criteria_grades": [
+        {
+          "text": "Output contains Page Copy organized by section (Headline, Subheadline, CTA, body sections)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Output contains Annotations explaining key copy decisions",
+          "passed": false,
+          "evidence": "Missing annotations"
+        },
+        {
+          "text": "Output contains Alternatives with 2-3 headline options and rationale",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Headline uses an outcome-focused or pain-point pattern (not generic 'Meet NestHub')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "Copy uses customer language (not 'IoT ecosystem' or 'interoperability')",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "Subheadline adds specificity (mentions device count or specific pain relief)",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "CTA communicates value (not just 'Sign Up' or 'Learn More')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Copy follows 'Clarity Over Cleverness' principle",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/3)"
+        },
+        {
+          "text": "No exclamation points in the body copy",
+          "passed": false,
+          "evidence": "Contains exclamation points"
+        },
+        {
+          "text": "At least one section uses a rhetorical question to engage the reader",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        }
+      ],
+      "word_count": 275
+    },
+    "gen_time_seconds": 106.38890171051025,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_001_output.md"
+  },
+  {
+    "task_id": "copy_002",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.7333333333333334,
+      "actionability": 0.0,
+      "structure": 0.35,
+      "depth": 0.4247826086956522,
+      "voice": 0.9,
+      "composite": 0.40664492753623194,
+      "criteria_grades": [
+        {
+          "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "Headline matches or connects to the ad hook ('what's for dinner' / dinner stress)",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Copy addresses the specific pain (decision fatigue, time, overwhelm) not just features",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "Benefits are specific (e.g., 'Save 3 hours a week on meal planning' not 'Save time')",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "CTA is action-oriented and communicates what they get (e.g., 'Start My Meal Plan' not 'Sign Up')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "Copy uses active voice throughout",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "No marketing buzzwords ('revolutionary', 'game-changing', 'cutting-edge')",
+          "passed": true,
+          "evidence": "No banned phrases found"
+        },
+        {
+          "text": "Subheadline is 1-2 sentences max and adds specificity",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "At least one section uses an analogy or concrete example",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "Annotations cite specific copywriting principles for key decisions",
+          "passed": true,
+          "evidence": "Has explanations"
+        }
+      ],
+      "word_count": 402
+    },
+    "gen_time_seconds": 138.65027451515198,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_002_output.md"
+  },
+  {
+    "task_id": "copy_003",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.2,
+      "specificity": 0.8,
+      "actionability": 0.13333333333333333,
+      "structure": 0.0,
+      "depth": 0.3258823529411765,
+      "voice": 0.7999999999999999,
+      "composite": 0.34925490196078435,
+      "criteria_grades": [
+        {
+          "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "Copy addresses 'which plan is right for me?' anxiety directly",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Each plan has a clear use-case description (not just feature lists)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Recommended plan is indicated with supporting copy",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/3)"
+        },
+        {
+          "text": "Copy differentiates from competitors (Canva, Figma, Adobe) without being negative",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "CTAs are plan-specific (e.g., 'Start Team Trial' not generic 'Get Started')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "Copy includes risk reversal (free trial, money-back guarantee, or migration support)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "Headline or section header uses specificity (e.g., pricing starts at or per-user pricing)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "At least one annotation explains why a specific plan is recommended",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "No exclamation points in the copy",
+          "passed": false,
+          "evidence": "Banned phrase: 'streamline'"
+        }
+      ],
+      "word_count": 299
+    },
+    "gen_time_seconds": 121.26587867736816,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_003_output.md"
+  },
+  {
+    "task_id": "copy_004",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.5833333333333333,
+      "actionability": 0.0,
+      "structure": 0.15,
+      "depth": 0.2588235294117647,
+      "voice": 1.0,
+      "composite": 0.29004901960784313,
+      "criteria_grades": [
+        {
+          "text": "Output contains Headline, Subheadline, Primary CTA, and at least 2 alternative headlines",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Headline addresses the specific pain (shared spreadsheets/sticky notes) or the desired outcome (security without complexity)",
+          "passed": false,
+          "evidence": "Term coverage: 9% (1/11)"
+        },
+        {
+          "text": "Copy does NOT use fear-based messaging ('Your passwords are at risk!', 'Hackers are targeting you')",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "Subheadline is 1-2 sentences and adds a specific detail (price, feature count, or setup time)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "CTA follows the [Action Verb] + [What They Get] formula",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        },
+        {
+          "text": "Copy is written in customer language (not 'enterprise-grade encryption' or 'zero-knowledge architecture')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "At least one alternative headline uses the '{Achieve outcome} without {pain point}' formula",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "No exclamation points in any copy",
+          "passed": true,
+          "evidence": "No banned phrases found"
+        },
+        {
+          "text": "Active voice used throughout",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/3)"
+        },
+        {
+          "text": "Annotations explain the reasoning behind the primary headline choice",
+          "passed": false,
+          "evidence": "Missing annotations"
+        }
+      ],
+      "word_count": 185
+    },
+    "gen_time_seconds": 63.092618227005005,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_004_output.md"
+  },
+  {
+    "task_id": "copy_005",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.65,
+      "actionability": 0.16666666666666669,
+      "structure": 0.13333333333333333,
+      "depth": 0.24736842105263157,
+      "voice": 0.85,
+      "composite": 0.3180701754385965,
+      "criteria_grades": [
+        {
+          "text": "Rewritten headline replaces jargon with clear benefit language",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Body copy uses simple words ('use' not 'utilize', 'help' not 'facilitate')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "No marketing buzzwords remain ('cutting-edge', 'next-generation', 'revolutionize', 'leverage')",
+          "passed": false,
+          "evidence": "Banned phrase: 'streamline'"
+        },
+        {
+          "text": "Copy connects the AI feature to a specific customer outcome (less time prioritizing, better team focus)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "Active voice is used throughout the rewrite",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "Copy includes a specific proof point or example of the outcome",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Output includes annotations explaining what was changed and why",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "At least 2 headline alternatives are provided",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "CTA is specific and value-oriented",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Rewrite passes the 'read it aloud' test - sounds like a human, not a brochure",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        }
+      ],
+      "word_count": 185
+    },
+    "gen_time_seconds": 76.21862173080444,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_005_output.md"
+  },
+  {
+    "task_id": "copy_006",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.75,
+      "actionability": 0.1,
+      "structure": 0.85,
+      "depth": 0.7561224489795918,
+      "voice": 0.73,
+      "composite": 0.5211122448979593,
+      "criteria_grades": [
+        {
+          "text": "Output contains Page Copy organized by section and Annotations",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "Story of founding connects to customer pain (poor API docs) not just founder bio",
+          "passed": false,
+          "evidence": "Term coverage: 43% (3/7)"
+        },
+        {
+          "text": "Copy includes specific proof points (200+ customers, 1B calls, TechCrunch) in context",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Mission is connected to customer benefit (not just 'we\u00e4\u00bd\u00bf\u00e5\u2018\u00bd\u00e6\u02dc\u00af to democratize API integration')",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "Copy includes a CTA (the skill says about pages should still have a CTA)",
+          "passed": true,
+          "evidence": "Term coverage: 50% (2/4)"
+        },
+        {
+          "text": "Voice matches the technical audience (no dumbed-down language, but no jargon either)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/8)"
+        },
+        {
+          "text": "Headline or opening connects to the 'why' of the company",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "No exclamation points",
+          "passed": false,
+          "evidence": "Banned phrase: 'streamline'"
+        },
+        {
+          "text": "At least one section uses specific numbers or outcomes instead of vague claims",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Annotations explain voice/tone choices for the technical audience",
+          "passed": true,
+          "evidence": "Has explanations"
+        }
+      ],
+      "word_count": 765
+    },
+    "gen_time_seconds": 249.8813591003418,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_006_output.md"
+  },
+  {
+    "task_id": "copy_007",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.4,
+      "specificity": 0.4666666666666667,
+      "actionability": 0.2,
+      "structure": 0.2,
+      "depth": 0.5,
+      "voice": 0.88,
+      "composite": 0.4013333333333334,
+      "criteria_grades": [
+        {
+          "text": "All 7 CTAs are provided and each is unique (not copy-pasted across pages)",
+          "passed": true,
+          "evidence": "Unique CTAs found: 4"
+        },
+        {
+          "text": "No CTA uses weak patterns ('Sign Up', 'Learn More', 'Submit', 'Click Here', 'Get Started')",
+          "passed": true,
+          "evidence": "No banned phrases found"
+        },
+        {
+          "text": "Each CTA follows the [Action Verb] + [What They Get] formula",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        },
+        {
+          "text": "CTAs are context-appropriate (e.g., Pricing page CTA mentions pricing or plan, Features page CTA mentions trying the feature)",
+          "passed": false,
+          "evidence": "Term coverage: 30% (3/10)"
+        },
+        {
+          "text": "CTAs match the friendly/reassuring voice (not corporate or aggressive)",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "At least one CTA includes a qualifier (e.g., 'Free', 'My', 'Your')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "No exclamation points in any CTA",
+          "passed": true,
+          "evidence": "No banned phrases found"
+        },
+        {
+          "text": "CTAs are short (under 6 words each)",
+          "passed": false,
+          "evidence": "Word count: 401 (limit: 6)"
+        },
+        {
+          "text": "Homepage hero CTA is the strongest/most compelling of the set",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Annotations explain why each CTA was chosen for its specific page context",
+          "passed": true,
+          "evidence": "Has explanations"
+        }
+      ],
+      "word_count": 401
+    },
+    "gen_time_seconds": 145.64750838279724,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_007_output.md"
+  },
+  {
+    "task_id": "copy_008",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.8,
+      "actionability": 0.19166666666666665,
+      "structure": 0.35,
+      "depth": 0.3859259259259259,
+      "voice": 0.86,
+      "composite": 0.45042592592592595,
+      "criteria_grades": [
+        {
+          "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "Headline communicates the outcome (time saved, reports automated) not just the feature name",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Copy addresses the specific pain (2-4 hours weekly on reports)",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Feature is connected to benefit \u00e2\u2020\u2019 outcome chain (auto-generate \u00e2\u2020\u2019 save time \u00e2\u2020\u2019 focus on strategy)",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "Copy differentiates from manual report building (the competitor approach)",
+          "passed": true,
+          "evidence": "Term coverage: 50% (3/6)"
+        },
+        {
+          "text": "CTA communicates what they get (e.g., 'Automate My Reports' not 'Try Instant Reports')",
+          "passed": false,
+          "evidence": "Term coverage: 17% (1/6)"
+        },
+        {
+          "text": "Subheadline adds a specific detail (time savings, frequency, or ease of setup)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "Copy uses 'you/your' more than 'we/our'",
+          "passed": true,
+          "evidence": "you/your: 21, I/we/our: 6"
+        },
+        {
+          "text": "At least one section uses a before/after comparison",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        },
+        {
+          "text": "No exclamation points in body copy",
+          "passed": false,
+          "evidence": "Contains exclamation points"
+        }
+      ],
+      "word_count": 367
+    },
+    "gen_time_seconds": 115.37233543395996,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_008_output.md"
+  },
+  {
+    "task_id": "copy_009",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.9,
+      "actionability": 0.16666666666666669,
+      "structure": 0.65,
+      "depth": 0.7466666666666666,
+      "voice": 0.85,
+      "composite": 0.5455,
+      "criteria_grades": [
+        {
+          "text": "Headline for the email capture section is specific (not 'Subscribe to our newsletter')",
+          "passed": true,
+          "evidence": "Term coverage: 57% (4/7)"
+        },
+        {
+          "text": "Copy communicates what subscribers get (not just 'updates')",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Specific content examples are mentioned (e.g., 'weekly SEO tips', 'monthly benchmark reports')",
+          "passed": false,
+          "evidence": "Term coverage: 30% (3/10)"
+        },
+        {
+          "text": "CTA communicates the value of subscribing (e.g., 'Get Weekly Marketing Insights' not 'Subscribe')",
+          "passed": true,
+          "evidence": "Term coverage: 50% (4/8)"
+        },
+        {
+          "text": "Copy addresses 'what's in it for me?' for the marketing manager audience",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "At least 2 alternative headlines/CTAs are provided",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Copy is concise (email capture sections should be short)",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "No exclamation points",
+          "passed": false,
+          "evidence": "Banned phrase: 'leverage'"
+        },
+        {
+          "text": "Annotations explain why the chosen approach works for this blog audience",
+          "passed": true,
+          "evidence": "Has explanations"
+        },
+        {
+          "text": "Copy avoids generic promises ('stay informed', 'get the latest')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        }
+      ],
+      "word_count": 616
+    },
+    "gen_time_seconds": 274.00078558921814,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_009_output.md"
+  },
+  {
+    "task_id": "copy_010",
+    "skill": "copywriting",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.25,
+      "actionability": 0.0,
+      "structure": 0.15,
+      "depth": 0.38103448275862073,
+      "voice": 0.95,
+      "composite": 0.23060344827586207,
+      "criteria_grades": [
+        {
+          "text": "Output contains Headline, Subheadline, CTA, and at least 2 headline alternatives",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "Headline addresses the emotional pain (guilt, worry about pet) not just the service",
+          "passed": false,
+          "evidence": "Term coverage: 29% (2/7)"
+        },
+        {
+          "text": "Copy communicates trust and safety (background checks, certification, video meet) without sounding clinical",
+          "passed": false,
+          "evidence": "Term coverage: 36% (4/11)"
+        },
+        {
+          "text": "Subheadline adds specificity (mentions a verification detail or the meet-and-greet feature)",
+          "passed": false,
+          "evidence": "Term coverage: 14% (1/7)"
+        },
+        {
+          "text": "CTA communicates the outcome (e.g., 'Find My Pet Sitter' not 'Browse Sitters')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "Copy uses customer language and emotional resonance ('peace of mind', 'like family')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/8)"
+        },
+        {
+          "text": "At least one headline alternative uses the '{Achieve outcome} without {pain point}' formula",
+          "passed": false,
+          "evidence": "Missing alternatives"
+        },
+        {
+          "text": "No exclamation points",
+          "passed": false,
+          "evidence": "Contains exclamation points"
+        },
+        {
+          "text": "Active voice used throughout",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/3)"
+        },
+        {
+          "text": "Annotations explain the emotional approach chosen for this audience",
+          "passed": true,
+          "evidence": "Has explanations"
+        }
+      ],
+      "word_count": 380
+    },
+    "gen_time_seconds": 144.40397810935974,
+    "output_file": "evaluation\\sft\\rl_trained_model\\copy_010_output.md"
+  },
+  {
+    "task_id": "cold_001",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.09090909090909091,
+      "specificity": 0.7166666666666666,
+      "actionability": 0.0,
+      "structure": 0.13333333333333333,
+      "depth": 0.32133333333333336,
+      "voice": 0.85,
+      "composite": 0.3031939393939394,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+          "passed": false,
+          "evidence": "Subject: '[DataPulse] Boost Your Marketing Efficiencies with a Unified Channel View' (10 words, lowercase=False)"
+        },
+        {
+          "text": "Subject line does NOT contain the prospect's first name, product name, or any sales language",
+          "passed": false,
+          "evidence": "Subject: '[DataPulse] Boost Your Marketing Efficiencies with a Unified Channel View' (10 words, lowercase=False)"
+        },
+        {
+          "text": "Email opens with an observation about Brightwave (not 'I hope this email finds you well' or 'My name is...')",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "Email uses 'you/your' more than 'I/we' (leads with their world)",
+          "passed": true,
+          "evidence": "you/your: 12, I/we/our: 9"
+        },
+        {
+          "text": "Personalization connects to the problem (not just 'Congrats on your raise')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Specific proof point is included (NimbusCRM numbers: 60% reporting time reduction, 23% revenue increase)",
+          "passed": false,
+          "evidence": "Term coverage: 20% (2/10)"
+        },
+        {
+          "text": "Single CTA that is interest-based (e.g., 'Worth exploring?' or 'Would this be useful?')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        },
+        {
+          "text": "No 30-minute meeting request",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Email is under 150 words",
+          "passed": false,
+          "evidence": "Word count: 257 (limit: 150)"
+        },
+        {
+          "text": "No jargon: 'synergy', 'leverage', 'best-in-class', 'leading provider' are absent",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "No feature dump - one proof point is highlighted, not a list of features",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        }
+      ],
+      "word_count": 257
+    },
+    "gen_time_seconds": 79.34954500198364,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_001_output.md"
+  },
+  {
+    "task_id": "cold_002",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.09090909090909091,
+      "specificity": 0.6666666666666667,
+      "actionability": 0.0,
+      "structure": 0.2,
+      "depth": 0.4224,
+      "voice": 0.5,
+      "composite": 0.2783006060606061,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, no emojis",
+          "passed": false,
+          "evidence": "Subject: 'Streamlining Your Deployment Process \u2014 Perfect For Our Small Teams!' (10 words, lowercase=False)"
+        },
+        {
+          "text": "Email does NOT open with 'I hope this email finds you well' or 'My name is X'",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "Opening references something specific about HealthBridge (hiring, their product, or their stage)",
+          "passed": true,
+          "evidence": "Term coverage: 55% (6/11)"
+        },
+        {
+          "text": "Email uses contractions (sounds human, not like a template)",
+          "passed": false,
+          "evidence": "Contractions found: [\"it's\"]"
+        },
+        {
+          "text": "The personalized observation naturally leads to why you're reaching out",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "One specific proof point is included (MedFlow numbers)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "CTA is interest-based and low-friction (e.g., 'Relevant?' or 'Worth a look?')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "No asking for a 30-minute call",
+          "passed": false,
+          "evidence": "Banned phrase: 'i wanted to reach out'"
+        },
+        {
+          "text": "Email is under 120 words",
+          "passed": false,
+          "evidence": "Word count: 431 (limit: 120)"
+        },
+        {
+          "text": "Every sentence serves the reader, not the sender",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "No AI-telltale phrases ('I came across your profile', 'leverage', 'best-in-class')",
+          "passed": false,
+          "evidence": "Banned phrase: 'i wanted to reach out'"
+        }
+      ],
+      "word_count": 431
+    },
+    "gen_time_seconds": 145.59339785575867,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_002_output.md"
+  },
+  {
+    "task_id": "cold_003",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.18181818181818182,
+      "specificity": 0.7666666666666666,
+      "actionability": 0.0,
+      "structure": 0.35,
+      "depth": 0.5627027027027027,
+      "voice": 0.4,
+      "composite": 0.3475581490581491,
+      "criteria_grades": [
+        {
+          "text": "Email 2 is sent 3 days after Email 1, Email 3 is sent 5-7 days after Email 2",
+          "passed": true,
+          "evidence": "Term coverage: 100% (6/6)"
+        },
+        {
+          "text": "Each email stands alone (could be read without seeing the previous one)",
+          "passed": false,
+          "evidence": "Term coverage: 43% (3/7)"
+        },
+        {
+          "text": "Each email adds a new angle or piece of proof (not just 'checking in')",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "None of the emails open with 'Just following up' or 'Just checking in'",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "Subject lines are different across all 3 emails",
+          "passed": false,
+          "evidence": "Subject: '[Your Company Name] Introduction \u2013 Remote First Culture & Onboarding Challenges' (11 words, lowercase=False)"
+        },
+        {
+          "text": "Each email has one clear, low-friction CTA",
+          "passed": false,
+          "evidence": "Term coverage: 33% (1/3)"
+        },
+        {
+          "text": "Email 3 (breakup email) acknowledges it's the last touch",
+          "passed": false,
+          "evidence": "Term coverage: 40% (2/5)"
+        },
+        {
+          "text": "No email asks for a 30-minute meeting",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Each email is under 100 words",
+          "passed": false,
+          "evidence": "Word count: 787 (limit: 100)"
+        },
+        {
+          "text": "All 3 emails use contractions and sound human",
+          "passed": true,
+          "evidence": "Contractions found: [\"don't\", \"you're\", \"i'm\"]"
+        },
+        {
+          "text": "No email contains AI phrases ('I hope this finds you well', 'leverage', 'synergy')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        }
+      ],
+      "word_count": 787
+    },
+    "gen_time_seconds": 299.1387701034546,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_003_output.md"
+  },
+  {
+    "task_id": "cold_004",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.3,
+      "specificity": 0.8500000000000001,
+      "actionability": 0.225,
+      "structure": 0.0,
+      "depth": 0.4213636363636364,
+      "voice": 0.7,
+      "composite": 0.4021363636363637,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, looks internal/collegial",
+          "passed": false,
+          "evidence": "Subject: 'Leveraging Security Expertise During Scale \u2013 The Next Phase for Your Fintech Success' (13 words, lowercase=False)"
+        },
+        {
+          "text": "Opening connects the SOC 2 achievement to the ongoing challenge (maintaining security culture at scale)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "Email leads with their world (the challenge of scaling engineering while staying secure)",
+          "passed": true,
+          "evidence": "Term coverage: 50% (5/10)"
+        },
+        {
+          "text": "One specific proof point is included (PaySecure: 40% incident reduction in 6 months)",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "CTA is interest-based (not 'Can we schedule a call?')",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/3)"
+        },
+        {
+          "text": "Email uses 'you/your' predominantly over 'I/we'",
+          "passed": true,
+          "evidence": "you/your: 18, I/we/our: 15"
+        },
+        {
+          "text": "Email is under 130 words",
+          "passed": false,
+          "evidence": "Word count: 377 (limit: 130)"
+        },
+        {
+          "text": "No feature dump - focuses on the outcome (fewer incidents, maintained security culture)",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Voice sounds like a peer who understands fintech engineering challenges",
+          "passed": true,
+          "evidence": "Term coverage: 50% (3/6)"
+        },
+        {
+          "text": "No fake urgency ('limited time offer', 'before it's too late')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        }
+      ],
+      "word_count": 377
+    },
+    "gen_time_seconds": 104.91041350364685,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_004_output.md"
+  },
+  {
+    "task_id": "cold_005",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.2,
+      "specificity": 0.4666666666666667,
+      "actionability": 0.125,
+      "structure": 0.2,
+      "depth": 0.4688,
+      "voice": 0.85,
+      "composite": 0.33021333333333336,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, no emojis or exclamation points",
+          "passed": false,
+          "evidence": "Subject: 'Revolutionizing Your Ad Spend with AdOptimize \u2013 A Game-Changer for Fashion Brands Like Yours' (14 words, lowercase=False)"
+        },
+        {
+          "text": "Opening references the Vogue feature naturally (not as flattery, but as a trigger for the conversation)",
+          "passed": false,
+          "evidence": "Term coverage: 38% (3/8)"
+        },
+        {
+          "text": "Email connects the trigger (Vogue feature) to the challenge (scaling ad creative testing)",
+          "passed": false,
+          "evidence": "Term coverage: 22% (2/9)"
+        },
+        {
+          "text": "Specific proof point included (ThreadCraft: 35% ROAS improvement, 10x creative variants)",
+          "passed": true,
+          "evidence": "Term coverage: 50% (4/8)"
+        },
+        {
+          "text": "Single, low-friction CTA",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Email is under 120 words",
+          "passed": false,
+          "evidence": "Word count: 547 (limit: 120)"
+        },
+        {
+          "text": "No AI-telltale patterns ('I came across', 'I noticed', 'congratulations on')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Uses contractions and sounds human",
+          "passed": true,
+          "evidence": "Contractions found: [\"it's\", \"i'm\"]"
+        },
+        {
+          "text": "Every sentence serves the reader (not the sender)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Does not mention your company name until after establishing value",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        }
+      ],
+      "word_count": 547
+    },
+    "gen_time_seconds": 151.71495819091797,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_005_output.md"
+  },
+  {
+    "task_id": "cold_006",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.5166666666666666,
+      "actionability": 0.0,
+      "structure": 0.0,
+      "depth": 0.3041176470588235,
+      "voice": 0.7,
+      "composite": 0.22874509803921567,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, looks like internal communication",
+          "passed": false,
+          "evidence": "Subject: 'Streamlining Your Delivery Operations with RouteOptima' (6 words, lowercase=False)"
+        },
+        {
+          "text": "Email is ultra-brief (under 80 words for C-suite)",
+          "passed": false,
+          "evidence": "Word count: 262 (limit: 80)"
+        },
+        {
+          "text": "Opening is direct and peer-level (no deferential language)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Value is communicated in terms David cares about (cost savings, delivery performance, competitive advantage)",
+          "passed": false,
+          "evidence": "Term coverage: 42% (5/12)"
+        },
+        {
+          "text": "One proof point that speaks to business outcomes (fuel costs, on-time delivery rate)",
+          "passed": false,
+          "evidence": "Term coverage: 40% (4/10)"
+        },
+        {
+          "text": "CTA is extremely low-friction for a CEO (one-line reply, not a meeting request)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/6)"
+        },
+        {
+          "text": "No technical jargon (no 'AI-powered', 'machine learning', 'algorithm')",
+          "passed": false,
+          "evidence": "Banned phrase: 'leverage'"
+        },
+        {
+          "text": "Uses contractions",
+          "passed": true,
+          "evidence": "Contractions found: [\"i'm\", \"isn't\"]"
+        },
+        {
+          "text": "Sounds like a peer who understands logistics business, not a tech vendor",
+          "passed": false,
+          "evidence": "Term coverage: 20% (1/5)"
+        },
+        {
+          "text": "No more than 5 sentences total",
+          "passed": false,
+          "evidence": "Banned phrase: 'leverage'"
+        }
+      ],
+      "word_count": 262
+    },
+    "gen_time_seconds": 69.8656873703003,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_006_output.md"
+  },
+  {
+    "task_id": "cold_007",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.65,
+      "actionability": 0.1,
+      "structure": 0.2833333333333333,
+      "depth": 0.47318181818181815,
+      "voice": 0.55,
+      "composite": 0.3198181818181818,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+          "passed": false,
+          "evidence": "Subject: 'Leveraging Your Recent LinkedIn Post \u2013 Addressing Key Challenges with Kubernetes' (11 words, lowercase=False)"
+        },
+        {
+          "text": "Opening references the LinkedIn post directly (the research signal)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (2/6)"
+        },
+        {
+          "text": "Personalization connects the post to the problem (K8s complexity) and naturally leads to why you're reaching out",
+          "passed": false,
+          "evidence": "Term coverage: 12% (1/8)"
+        },
+        {
+          "text": "Email would NOT make sense if you removed the personalized opening (personalization is essential, not decorative)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "One proof point with specific numbers (50% incident response time, 20 hours/week saved)",
+          "passed": true,
+          "evidence": "Term coverage: 56% (5/9)"
+        },
+        {
+          "text": "CTA is interest-based and low-friction",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Email is under 120 words",
+          "passed": false,
+          "evidence": "Word count: 491 (limit: 120)"
+        },
+        {
+          "text": "Technical but respectful voice (doesn't oversimplify K8s, but doesn't overload with jargon either)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "No AI phrases ('I came across your profile', 'I noticed your post')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Uses contractions",
+          "passed": false,
+          "evidence": "Contractions found: [\"i'm\"]"
+        }
+      ],
+      "word_count": 491
+    },
+    "gen_time_seconds": 125.82575058937073,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_007_output.md"
+  },
+  {
+    "task_id": "cold_008",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.1,
+      "specificity": 0.8,
+      "actionability": 0.1,
+      "structure": 0.15,
+      "depth": 0.4288888888888889,
+      "voice": 0.6699999999999999,
+      "composite": 0.3373888888888889,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase",
+          "passed": false,
+          "evidence": "Subject: 'Streamlining Your Hiring Process with HireFlow \u2013 A Game-Changer for Aggressive Growth Companies Like Yours' (15 words, lowercase=False)"
+        },
+        {
+          "text": "Opening connects their hiring activity (10+ open roles) to the pain (volume of applicants, time constraints)",
+          "passed": false,
+          "evidence": "Term coverage: 22% (2/9)"
+        },
+        {
+          "text": "Email uses 'you/your' predominantly",
+          "passed": true,
+          "evidence": "you/your: 20, I/we/our: 10"
+        },
+        {
+          "text": "Specific proof point included (RecruitPro: 45\u00e2\u2020\u201928 days time-to-hire, 30% quality improvement)",
+          "passed": false,
+          "evidence": "Term coverage: 44% (4/9)"
+        },
+        {
+          "text": "Single, interest-based CTA",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Email is under 130 words",
+          "passed": false,
+          "evidence": "Word count: 483 (limit: 130)"
+        },
+        {
+          "text": "No feature dump (don't list all ATS features)",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "No AI phrases ('I hope this finds you well', 'leverage', 'best-in-class')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Voice sounds like a peer who understands HR tech operations",
+          "passed": false,
+          "evidence": "Term coverage: 25% (1/4)"
+        },
+        {
+          "text": "No request for a 30-minute call",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        }
+      ],
+      "word_count": 483
+    },
+    "gen_time_seconds": 145.03867363929749,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_008_output.md"
+  },
+  {
+    "task_id": "cold_009",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.0,
+      "specificity": 0.5666666666666667,
+      "actionability": 0.15,
+      "structure": 0.0,
+      "depth": 0.44571428571428573,
+      "voice": 0.6499999999999999,
+      "composite": 0.2529047619047619,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase",
+          "passed": false,
+          "evidence": "Subject: 'Your Startup Needs Monitoring \u2014 Here\u2019s How We Can Help!' (10 words, lowercase=False)"
+        },
+        {
+          "text": "Email acknowledges the bootstrapped context (small team, limited resources, no dedicated DevOps)",
+          "passed": false,
+          "evidence": "Term coverage: 30% (3/10)"
+        },
+        {
+          "text": "No enterprise language ('scalability', 'enterprise-grade', 'SLA', 'dedicated support team')",
+          "passed": false,
+          "evidence": "Banned phrase: 'my name is'"
+        },
+        {
+          "text": "Proof point is relevant to a small team (caught issues early, saved revenue)",
+          "passed": false,
+          "evidence": "Term coverage: 33% (3/9)"
+        },
+        {
+          "text": "CTA is extremely low-friction (one-line reply)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        },
+        {
+          "text": "Email is under 100 words",
+          "passed": false,
+          "evidence": "Word count: 411 (limit: 100)"
+        },
+        {
+          "text": "Voice is direct and no-BS (no corporate polish)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/5)"
+        },
+        {
+          "text": "Uses contractions",
+          "passed": false,
+          "evidence": "Contractions found: []"
+        },
+        {
+          "text": "Does not ask for a meeting",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/1)"
+        },
+        {
+          "text": "Every sentence serves the reader (bootstrapped founder's time is precious)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/7)"
+        }
+      ],
+      "word_count": 411
+    },
+    "gen_time_seconds": 124.76523804664612,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_009_output.md"
+  },
+  {
+    "task_id": "cold_010",
+    "skill": "cold-email",
+    "scores": {
+      "criteria_pass_rate": 0.0,
+      "specificity": 0.8500000000000001,
+      "actionability": 0.225,
+      "structure": 0.35,
+      "depth": 0.3987096774193548,
+      "voice": 0.75,
+      "composite": 0.3823709677419356,
+      "criteria_grades": [
+        {
+          "text": "Subject line is 2-4 words, lowercase, looks like internal communication",
+          "passed": false,
+          "evidence": "Subject: 'Subject Line:' (2 words, lowercase=False)"
+        },
+        {
+          "text": "Opening references the hiring (5 new reps) as a trigger, not as flattery",
+          "passed": false,
+          "evidence": "Term coverage: 17% (1/6)"
+        },
+        {
+          "text": "Email connects the trigger to the challenge (ramping new reps, maintaining pitch consistency)",
+          "passed": false,
+          "evidence": "Term coverage: 11% (1/9)"
+        },
+        {
+          "text": "One specific proof point (InfraCloud: 40% faster ramp, 12\u00e2\u2020\u201919% demo-to-close)",
+          "passed": false,
+          "evidence": "Term coverage: 25% (2/8)"
+        },
+        {
+          "text": "CTA is interest-based and low-friction",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/2)"
+        },
+        {
+          "text": "Email is under 130 words",
+          "passed": false,
+          "evidence": "Word count: 461 (limit: 130)"
+        },
+        {
+          "text": "No AI-telltale patterns",
+          "passed": false,
+          "evidence": "Banned phrase: 'leverage'"
+        },
+        {
+          "text": "Uses contractions",
+          "passed": false,
+          "evidence": "Contractions found: []"
+        },
+        {
+          "text": "Email is structured using one of the 4 frameworks (Observation\u00e2\u2020\u2019Problem\u00e2\u2020\u2019Proof\u00e2\u2020\u2019Ask, Question\u00e2\u2020\u2019Value\u00e2\u2020\u2019Ask, Trigger\u00e2\u2020\u2019Insight\u00e2\u2020\u2019Ask, or Story\u00e2\u2020\u2019Bridge\u00e2\u2020\u2019Ask)",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/8)"
+        },
+        {
+          "text": "The framework is applied naturally, not forced",
+          "passed": false,
+          "evidence": "Term coverage: 0% (0/4)"
+        }
+      ],
+      "word_count": 461
+    },
+    "gen_time_seconds": 176.28064370155334,
+    "output_file": "evaluation\\sft\\rl_trained_model\\cold_010_output.md"
+  }
+]

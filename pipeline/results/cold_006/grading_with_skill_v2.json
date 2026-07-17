@@ -1,0 +1,66 @@
+{
+  "eval_id": "cold_006",
+  "run_id": "cold_006_with_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, looks like internal communication",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email - RouteOptima to David Park' (8 words, lowercase=False)"
+    },
+    {
+      "text": "Email is ultra-brief (under 80 words for C-suite)",
+      "passed": false,
+      "evidence": "Word count: 430 (limit: 80)"
+    },
+    {
+      "text": "Opening is direct and peer-level (no deferential language)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Value is communicated in terms David cares about (cost savings, delivery performance, competitive advantage)",
+      "passed": false,
+      "evidence": "Term coverage: 25% (3/12)"
+    },
+    {
+      "text": "One proof point that speaks to business outcomes (fuel costs, on-time delivery rate)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "CTA is extremely low-friction for a CEO (one-line reply, not a meeting request)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "No technical jargon (no 'AI-powered', 'machine learning', 'algorithm')",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": true,
+      "evidence": "Contractions found: [\"they're\", \"hasn't\"]"
+    },
+    {
+      "text": "Sounds like a peer who understands logistics business, not a tech vendor",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "No more than 5 sentences total",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    }
+  ],
+  "pass_rate": 0.1,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.0,
+    "structure": 0.85,
+    "depth": 0.5285714285714286,
+    "voice": 0.85,
+    "composite": 0.4403571428571429,
+    "word_count": 430
+  }
+}

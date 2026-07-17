@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.8,
+  "actionability": 0.1,
+  "structure": 0.65,
+  "depth": 0.49654761904761907,
+  "voice": 0.74,
+  "composite": 0.45115476190476195,
+  "criteria_grades": [
+    {
+      "text": "Output is structured with Quick Wins, High-Impact Changes, Test Ideas, and Copy Alternatives sections",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Identifies that the headline is feature-oriented rather than benefit-oriented",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Recommends connecting features to customer outcomes/benefits",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Notes the absence of a guarantee or risk reversal near the CTA",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "Recommends surfacing written testimonials from the 87 reviews",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Suggests adding a comparison section or addressing 'why this over competitors'",
+      "passed": true,
+      "evidence": "Term coverage: 83% (5/6)"
+    },
+    {
+      "text": "Provides alternative headline(s) that are outcome-focused",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Identifies that 12 technical specs may overwhelm non-technical buyers",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "Recommends FAQ section to handle objections",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "At least one recommendation addresses the pricing page anxiety (is $299 worth it?)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    }
+  ],
+  "word_count": 598
+}

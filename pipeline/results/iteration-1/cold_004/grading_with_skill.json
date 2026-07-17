@@ -1,0 +1,57 @@
+{
+  "eval_id": "cold_004",
+  "run_id": "cold_004_with_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, looks internal/collegial",
+      "passed": false,
+      "evidence": "Subject: 'soc 2 is just the start' (6 words, lowercase=True)"
+    },
+    {
+      "text": "Opening connects the SOC 2 achievement to the ongoing challenge (maintaining security culture at scale)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Email leads with their world (the challenge of scaling engineering while staying secure)",
+      "passed": false,
+      "evidence": "Term coverage: 10% (1/10)"
+    },
+    {
+      "text": "One specific proof point is included (PaySecure: 40% incident reduction in 6 months)",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "CTA is interest-based (not 'Can we schedule a call?')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Email uses 'you/your' predominantly over 'I/we'",
+      "passed": true,
+      "evidence": "you/your: 3, I/we/our: 1"
+    },
+    {
+      "text": "Email is under 130 words",
+      "passed": false,
+      "evidence": "Word count: 133 (limit: 130)"
+    },
+    {
+      "text": "No feature dump - focuses on the outcome (fewer incidents, maintained security culture)",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Voice sounds like a peer who understands fintech engineering challenges",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "No fake urgency ('limited time offer', 'before it's too late')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    }
+  ],
+  "pass_rate": 0.3
+}

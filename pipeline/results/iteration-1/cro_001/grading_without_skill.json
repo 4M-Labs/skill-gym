@@ -1,0 +1,57 @@
+{
+  "eval_id": "cro_001",
+  "run_id": "cro_001_without_skill",
+  "expectations": [
+    {
+      "text": "Output contains a 'Quick Wins' section",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Output contains a 'High-Impact Changes' section",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Output contains a 'Test Ideas' section",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Output contains a 'Copy Alternatives' section with 2-3 headline alternatives",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Identifies the headline as too vague/generic (not specific or outcome-focused)",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Identifies the CTA 'Sign Up' as weak and suggests a stronger alternative",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Identifies the 12-field form as a friction point and recommends reducing fields",
+      "passed": true,
+      "evidence": "Term coverage: 71% (5/7)"
+    },
+    {
+      "text": "Notes the absence of trust signals (testimonials, logos, case studies)",
+      "passed": false,
+      "evidence": "Term coverage: 43% (3/7)"
+    },
+    {
+      "text": "Recommends adding social proof near the CTA",
+      "passed": true,
+      "evidence": "Term coverage: 75% (3/4)"
+    },
+    {
+      "text": "Provides at least one specific CTA copy alternative using the [Action Verb] + [What They Get] pattern",
+      "passed": true,
+      "evidence": "Has alternatives"
+    }
+  ],
+  "pass_rate": 0.5
+}

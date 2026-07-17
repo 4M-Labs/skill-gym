@@ -1,0 +1,561 @@
+{
+  "version": "v2",
+  "generated_at": "2026-07-16T18:24:32.310889",
+  "weights": {
+    "criteria_pass_rate": 0.25,
+    "specificity": 0.2,
+    "actionability": 0.2,
+    "structure": 0.15,
+    "depth": 0.1,
+    "voice": 0.1
+  },
+  "overall": {
+    "with_skill_mean": 0.5610883442926294,
+    "without_skill_mean": 0.5320056348033692,
+    "delta_mean": 0.02908270948926035,
+    "delta_median": 0.026597557551937046,
+    "delta_stdev": 0.05318491960720889,
+    "task_count": 30,
+    "positive_delta_count": 20,
+    "negative_delta_count": 10,
+    "zero_delta_count": 0
+  },
+  "by_skill": {
+    "cro": {
+      "with_skill_mean": 0.7508956035255678,
+      "without_skill_mean": 0.7102740740335084,
+      "delta_mean": 0.04062152949205938,
+      "delta_median": 0.03814451193529417,
+      "task_count": 10,
+      "dimension_deltas": {
+        "criteria_pass_rate": -1.1102230246251566e-17,
+        "specificity": 0.0,
+        "actionability": 0.22,
+        "structure": 0.0,
+        "depth": -0.0027847050794064464,
+        "voice": -0.030999999999999982,
+        "composite": 0.04062152949205938
+      },
+      "task_ids": [
+        "cro_001",
+        "cro_002",
+        "cro_003",
+        "cro_004",
+        "cro_005",
+        "cro_006",
+        "cro_007",
+        "cro_008",
+        "cro_009",
+        "cro_010"
+      ]
+    },
+    "copywriting": {
+      "with_skill_mean": 0.5380111050377464,
+      "without_skill_mean": 0.500514199424218,
+      "delta_mean": 0.0374969056135283,
+      "delta_median": 0.03853117509045678,
+      "task_count": 10,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.19,
+        "specificity": 0.006666666666666677,
+        "actionability": -0.048333333333333325,
+        "structure": 0.03999999999999998,
+        "depth": 0.09030238946861655,
+        "voice": -0.167,
+        "composite": 0.0374969056135283
+      },
+      "task_ids": [
+        "copy_001",
+        "copy_002",
+        "copy_003",
+        "copy_004",
+        "copy_005",
+        "copy_006",
+        "copy_007",
+        "copy_008",
+        "copy_009",
+        "copy_010"
+      ]
+    },
+    "cold-email": {
+      "with_skill_mean": 0.39435832431457435,
+      "without_skill_mean": 0.38522863095238097,
+      "delta_mean": 0.009129693362193358,
+      "delta_median": -0.0003188131313131559,
+      "task_count": 10,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.026363636363636367,
+        "specificity": 0.0016666666666666496,
+        "actionability": -0.01,
+        "structure": 0.04666666666666666,
+        "depth": -0.021945490620490612,
+        "voice": -0.005999999999999994,
+        "composite": 0.009129693362193358
+      },
+      "task_ids": [
+        "cold_001",
+        "cold_002",
+        "cold_003",
+        "cold_004",
+        "cold_005",
+        "cold_006",
+        "cold_007",
+        "cold_008",
+        "cold_009",
+        "cold_010"
+      ]
+    }
+  },
+  "per_task": {
+    "cro_001": {
+      "skill": "cro",
+      "with_composite": 0.8208624161073825,
+      "without_composite": 0.742,
+      "delta": 0.07886241610738254,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": 0.4,
+        "structure": 0.0,
+        "depth": -0.011375838926174553,
+        "voice": 0.0,
+        "composite": 0.07886241610738254
+      }
+    },
+    "cro_002": {
+      "skill": "cro",
+      "with_composite": 0.7322115384615384,
+      "without_composite": 0.7035997566909976,
+      "delta": 0.0286117817705408,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.4,
+        "specificity": 0.0,
+        "actionability": -0.2666666666666666,
+        "structure": 0.0,
+        "depth": -0.030548848961257757,
+        "voice": -0.15000000000000002,
+        "composite": 0.0286117817705408
+      }
+    },
+    "cro_003": {
+      "skill": "cro",
+      "with_composite": 0.7668801652892562,
+      "without_composite": 0.7199178082191781,
+      "delta": 0.04696235707007812,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": 0.2749999999999999,
+        "structure": 0.0,
+        "depth": 0.03962357070078115,
+        "voice": -0.12,
+        "composite": 0.04696235707007812
+      }
+    },
+    "cro_004": {
+      "skill": "cro",
+      "with_composite": 0.6887567567567567,
+      "without_composite": 0.6552169811320755,
+      "delta": 0.033539775624681245,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.09999999999999998,
+        "specificity": 0.0,
+        "actionability": 0.29999999999999993,
+        "structure": 0.0,
+        "depth": 0.07539775624681289,
+        "voice": -0.08999999999999997,
+        "composite": 0.033539775624681245
+      }
+    },
+    "cro_005": {
+      "skill": "cro",
+      "with_composite": 0.6574931506849315,
+      "without_composite": 0.6147439024390244,
+      "delta": 0.04274924824590709,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": 0.24999999999999997,
+        "structure": 0.0,
+        "depth": 0.0174924824590712,
+        "voice": -0.08999999999999997,
+        "composite": 0.04274924824590709
+      }
+    },
+    "cro_006": {
+      "skill": "cro",
+      "with_composite": 0.7956160714285714,
+      "without_composite": 0.8147828282828282,
+      "delta": -0.01916675685425684,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": -0.06666666666666665,
+        "structure": 0.0,
+        "depth": -0.0583342352092352,
+        "voice": 0.0,
+        "composite": -0.01916675685425684
+      }
+    },
+    "cro_007": {
+      "skill": "cro",
+      "with_composite": 0.856108695652174,
+      "without_composite": 0.7607585034013605,
+      "delta": 0.09535019225081343,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.20000000000000007,
+        "specificity": 0.0,
+        "actionability": 0.65,
+        "structure": 0.0,
+        "depth": 0.013501922508133646,
+        "voice": 0.14,
+        "composite": 0.09535019225081343
+      }
+    },
+    "cro_008": {
+      "skill": "cro",
+      "with_composite": 0.6923589743589744,
+      "without_composite": 0.7381505376344085,
+      "delta": -0.0457915632754341,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.30000000000000004,
+        "specificity": 0.0,
+        "actionability": 0.15833333333333333,
+        "structure": 0.0,
+        "depth": -0.08458229942100914,
+        "voice": 0.06000000000000005,
+        "composite": -0.0457915632754341
+      }
+    },
+    "cro_009": {
+      "skill": "cro",
+      "with_composite": 0.7997987012987013,
+      "without_composite": 0.6715704225352112,
+      "delta": 0.1282282787634902,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09999999999999998,
+        "specificity": 0.0,
+        "actionability": 0.5,
+        "structure": 0.0,
+        "depth": -0.02771721236509972,
+        "voice": 0.06000000000000005,
+        "composite": 0.1282282787634902
+      }
+    },
+    "cro_010": {
+      "skill": "cro",
+      "with_composite": 0.6988695652173913,
+      "without_composite": 0.6819999999999999,
+      "delta": 0.016869565217391358,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09999999999999998,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": 0.0,
+        "depth": 0.03869565217391302,
+        "voice": -0.12,
+        "composite": 0.016869565217391358
+      }
+    },
+    "copy_001": {
+      "skill": "copywriting",
+      "with_composite": 0.5601354166666667,
+      "without_composite": 0.5041071428571429,
+      "delta": 0.0560282738095238,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.3,
+        "specificity": -0.050000000000000044,
+        "actionability": -0.06666666666666667,
+        "structure": 0.0,
+        "depth": 0.16361607142857149,
+        "voice": -0.12,
+        "composite": 0.0560282738095238
+      }
+    },
+    "copy_002": {
+      "skill": "copywriting",
+      "with_composite": 0.579343137254902,
+      "without_composite": 0.49824193548387097,
+      "delta": 0.08110120177103108,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.2,
+        "specificity": 0.0,
+        "actionability": 0.10000000000000002,
+        "structure": 0.0,
+        "depth": 0.10101201771030988,
+        "voice": 0.010000000000000009,
+        "composite": 0.08110120177103108
+      }
+    },
+    "copy_003": {
+      "skill": "copywriting",
+      "with_composite": 0.5821846846846847,
+      "without_composite": 0.5075151515151516,
+      "delta": 0.07466953316953306,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.2,
+        "specificity": 0.10000000000000009,
+        "actionability": -0.21666666666666667,
+        "structure": 0.19999999999999996,
+        "depth": 0.15002866502866496,
+        "voice": 0.030000000000000027,
+        "composite": 0.07466953316953306
+      }
+    },
+    "copy_004": {
+      "skill": "copywriting",
+      "with_composite": 0.5016619496855346,
+      "without_composite": 0.5166808510638299,
+      "delta": -0.015018901378295313,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.10000000000000003,
+        "specificity": 0.0,
+        "actionability": -0.23333333333333334,
+        "structure": 0.0,
+        "depth": 0.006477652883714602,
+        "voice": 0.05999999999999994,
+        "composite": -0.015018901378295313
+      }
+    },
+    "copy_005": {
+      "skill": "copywriting",
+      "with_composite": 0.5630708333333333,
+      "without_composite": 0.3858166666666667,
+      "delta": 0.1772541666666666,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.5,
+        "specificity": 0.3666666666666667,
+        "actionability": 0.16666666666666669,
+        "structure": 0.19999999999999996,
+        "depth": 0.15587500000000004,
+        "voice": -1.0,
+        "composite": 0.1772541666666666
+      }
+    },
+    "copy_006": {
+      "skill": "copywriting",
+      "with_composite": 0.4733333333333334,
+      "without_composite": 0.5343079710144928,
+      "delta": -0.060974637681159405,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.10000000000000003,
+        "specificity": -0.15000000000000013,
+        "actionability": 0.0,
+        "structure": 0.19999999999999996,
+        "depth": 0.12025362318840582,
+        "voice": -0.48,
+        "composite": -0.060974637681159405
+      }
+    },
+    "copy_007": {
+      "skill": "copywriting",
+      "with_composite": 0.5550059523809524,
+      "without_composite": 0.5738076923076924,
+      "delta": -0.018801739926739947,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.2,
+        "specificity": 0.050000000000000044,
+        "actionability": -0.44999999999999996,
+        "structure": 0.0,
+        "depth": 0.11198260073260069,
+        "voice": 0.0,
+        "composite": -0.018801739926739947
+      }
+    },
+    "copy_008": {
+      "skill": "copywriting",
+      "with_composite": 0.6155223880597015,
+      "without_composite": 0.57453125,
+      "delta": 0.04099113805970145,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09999999999999998,
+        "specificity": -0.1499999999999999,
+        "actionability": 0.15,
+        "structure": 0.0,
+        "depth": 0.1299113805970149,
+        "voice": 0.030000000000000027,
+        "composite": 0.04099113805970145
+      }
+    },
+    "copy_009": {
+      "skill": "copywriting",
+      "with_composite": 0.4996488095238096,
+      "without_composite": 0.496,
+      "delta": 0.003648809523809582,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.10000000000000003,
+        "specificity": 0.0,
+        "actionability": 0.06666666666666667,
+        "structure": 0.0,
+        "depth": -0.19684523809523813,
+        "voice": -0.15000000000000002,
+        "composite": 0.003648809523809582
+      }
+    },
+    "copy_010": {
+      "skill": "copywriting",
+      "with_composite": 0.45020454545454547,
+      "without_composite": 0.41413333333333335,
+      "delta": 0.036071212121212115,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.3,
+        "specificity": -0.09999999999999998,
+        "actionability": 0.0,
+        "structure": -0.20000000000000007,
+        "depth": 0.16071212121212125,
+        "voice": -0.050000000000000044,
+        "composite": 0.036071212121212115
+      }
+    },
+    "cold_001": {
+      "skill": "cold-email",
+      "with_composite": 0.43681818181818177,
+      "without_composite": 0.43351136363636367,
+      "delta": 0.0033068181818181053,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.18181818181818182,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": -0.25,
+        "depth": -0.046477272727272756,
+        "voice": 0.0,
+        "composite": 0.0033068181818181053
+      }
+    },
+    "cold_002": {
+      "skill": "cold-email",
+      "with_composite": 0.39728787878787875,
+      "without_composite": 0.42568181818181816,
+      "delta": -0.028393939393939416,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09090909090909094,
+        "specificity": -0.03333333333333344,
+        "actionability": 0.0,
+        "structure": -0.20000000000000007,
+        "depth": -0.1445454545454546,
+        "voice": 0.0,
+        "composite": -0.028393939393939416
+      }
+    },
+    "cold_003": {
+      "skill": "cold-email",
+      "with_composite": 0.578532196969697,
+      "without_composite": 0.5059329004329005,
+      "delta": 0.07259929653679653,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09090909090909088,
+        "specificity": -0.050000000000000044,
+        "actionability": 0.15,
+        "structure": 0.0,
+        "depth": -0.001279761904761867,
+        "voice": 0.30000000000000004,
+        "composite": 0.07259929653679653
+      }
+    },
+    "cold_004": {
+      "skill": "cold-email",
+      "with_composite": 0.3566250000000001,
+      "without_composite": 0.3858666666666667,
+      "delta": -0.02924166666666661,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": -0.2,
+        "depth": 0.007583333333333386,
+        "voice": 0.0,
+        "composite": -0.02924166666666661
+      }
+    },
+    "cold_005": {
+      "skill": "cold-email",
+      "with_composite": 0.3378333333333333,
+      "without_composite": 0.31325000000000003,
+      "delta": 0.02458333333333329,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.1,
+        "specificity": 0.0,
+        "actionability": -0.125,
+        "structure": 0.15,
+        "depth": -0.12916666666666665,
+        "voice": 0.15000000000000002,
+        "composite": 0.02458333333333329
+      }
+    },
+    "cold_006": {
+      "skill": "cold-email",
+      "with_composite": 0.34883333333333333,
+      "without_composite": 0.3345,
+      "delta": 0.014333333333333309,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.09999999999999998,
+        "specificity": 0.09999999999999998,
+        "actionability": 0.0,
+        "structure": 0.1,
+        "depth": 0.043333333333333335,
+        "voice": 0.0,
+        "composite": 0.014333333333333309
+      }
+    },
+    "cold_007": {
+      "skill": "cold-email",
+      "with_composite": 0.32580555555555557,
+      "without_composite": 0.32975,
+      "delta": -0.003944444444444417,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.1,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": 0.3666666666666667,
+        "depth": 0.11055555555555552,
+        "voice": -0.44999999999999996,
+        "composite": -0.003944444444444417
+      }
+    },
+    "cold_008": {
+      "skill": "cold-email",
+      "with_composite": 0.47805555555555557,
+      "without_composite": 0.4103333333333333,
+      "delta": 0.06772222222222224,
+      "dimension_deltas": {
+        "criteria_pass_rate": -0.09999999999999998,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": 0.6,
+        "depth": 0.057222222222222285,
+        "voice": -0.030000000000000027,
+        "composite": 0.06772222222222224
+      }
+    },
+    "cold_009": {
+      "skill": "cold-email",
+      "with_composite": 0.35036363636363643,
+      "without_composite": 0.3571875,
+      "delta": -0.0068238636363635585,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.09999999999999998,
+        "specificity": 0.0,
+        "actionability": 0.0,
+        "structure": -0.1,
+        "depth": -0.13823863636363634,
+        "voice": -0.030000000000000027,
+        "composite": -0.0068238636363635585
+      }
+    },
+    "cold_010": {
+      "skill": "cold-email",
+      "with_composite": 0.3334285714285714,
+      "without_composite": 0.3562727272727273,
+      "delta": -0.02284415584415589,
+      "dimension_deltas": {
+        "criteria_pass_rate": 0.0,
+        "specificity": 0.0,
+        "actionability": -0.125,
+        "structure": 0.0,
+        "depth": 0.021558441558441555,
+        "voice": 0.0,
+        "composite": -0.02284415584415589
+      }
+    }
+  }
+}

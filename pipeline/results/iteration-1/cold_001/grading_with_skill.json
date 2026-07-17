@@ -1,0 +1,62 @@
+{
+  "eval_id": "cold_001",
+  "run_id": "cold_001_with_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+      "passed": true,
+      "evidence": "Subject: 'brightwave's marketing metrics' (3 words, lowercase=True)"
+    },
+    {
+      "text": "Subject line does NOT contain the prospect's first name, product name, or any sales language",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Email opens with an observation about Brightwave (not 'I hope this email finds you well' or 'My name is...')",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Email uses 'you/your' more than 'I/we' (leads with their world)",
+      "passed": true,
+      "evidence": "you/your: 4, I/we/our: 3"
+    },
+    {
+      "text": "Personalization connects to the problem (not just 'Congrats on your raise')",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Specific proof point is included (NimbusCRM numbers: 60% reporting time reduction, 23% revenue increase)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (2/10)"
+    },
+    {
+      "text": "Single CTA that is interest-based (e.g., 'Worth exploring?' or 'Would this be useful?')",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "No 30-minute meeting request",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Email is under 150 words",
+      "passed": true,
+      "evidence": "Word count: 140 (limit: 150)"
+    },
+    {
+      "text": "No jargon: 'synergy', 'leverage', 'best-in-class', 'leading provider' are absent",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "No feature dump - one proof point is highlighted, not a list of features",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    }
+  ],
+  "pass_rate": 0.5454545454545454
+}

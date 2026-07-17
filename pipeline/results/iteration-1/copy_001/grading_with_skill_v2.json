@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_001",
+  "run_id": "copy_001_with_skill",
+  "expectations": [
+    {
+      "text": "Output contains Page Copy organized by section (Headline, Subheadline, CTA, body sections)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Output contains Annotations explaining key copy decisions",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "Output contains Alternatives with 2-3 headline options and rationale",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Headline uses an outcome-focused or pain-point pattern (not generic 'Meet NestHub')",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "Copy uses customer language (not 'IoT ecosystem' or 'interoperability')",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "Subheadline adds specificity (mentions device count or specific pain relief)",
+      "passed": true,
+      "evidence": "Term coverage: 57% (4/7)"
+    },
+    {
+      "text": "CTA communicates value (not just 'Sign Up' or 'Learn More')",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Copy follows 'Clarity Over Cleverness' principle",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "No exclamation points in the body copy",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "At least one section uses a rhetorical question to engage the reader",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    }
+  ],
+  "pass_rate": 0.5,
+  "scores": {
+    "specificity": 0.8,
+    "actionability": 0.06666666666666667,
+    "structure": 0.65,
+    "depth": 0.7930208333333333,
+    "voice": 0.85,
+    "composite": 0.5601354166666667,
+    "word_count": 1133
+  }
+}

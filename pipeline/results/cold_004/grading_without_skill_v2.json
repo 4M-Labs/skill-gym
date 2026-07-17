@@ -1,0 +1,66 @@
+{
+  "eval_id": "cold_004",
+  "run_id": "cold_004_without_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, looks internal/collegial",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email - James Liu @ FinScale' (8 words, lowercase=False)"
+    },
+    {
+      "text": "Opening connects the SOC 2 achievement to the ongoing challenge (maintaining security culture at scale)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Email leads with their world (the challenge of scaling engineering while staying secure)",
+      "passed": false,
+      "evidence": "Term coverage: 40% (4/10)"
+    },
+    {
+      "text": "One specific proof point is included (PaySecure: 40% incident reduction in 6 months)",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "CTA is interest-based (not 'Can we schedule a call?')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/3)"
+    },
+    {
+      "text": "Email uses 'you/your' predominantly over 'I/we'",
+      "passed": false,
+      "evidence": "you/your: 2, I/we/our: 2"
+    },
+    {
+      "text": "Email is under 130 words",
+      "passed": false,
+      "evidence": "Word count: 134 (limit: 130)"
+    },
+    {
+      "text": "No feature dump - focuses on the outcome (fewer incidents, maintained security culture)",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Voice sounds like a peer who understands fintech engineering challenges",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "No fake urgency ('limited time offer', 'before it's too late')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    }
+  ],
+  "pass_rate": 0.2,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.0,
+    "structure": 0.2,
+    "depth": 0.3414285714285714,
+    "voice": 1.0,
+    "composite": 0.3641428571428571,
+    "word_count": 134
+  }
+}

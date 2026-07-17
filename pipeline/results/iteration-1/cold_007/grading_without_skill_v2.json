@@ -1,0 +1,66 @@
+{
+  "eval_id": "cold_007",
+  "run_id": "cold_007_without_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+      "passed": false,
+      "evidence": "Subject: 'Your Kubernetes complexity post resonated \u2014 StreamTech cut incident response time by 50%' (13 words, lowercase=False)"
+    },
+    {
+      "text": "Opening references the LinkedIn post directly (the research signal)",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "Personalization connects the post to the problem (K8s complexity) and naturally leads to why you're reaching out",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Email would NOT make sense if you removed the personalized opening (personalization is essential, not decorative)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "One proof point with specific numbers (50% incident response time, 20 hours/week saved)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "CTA is interest-based and low-friction",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/2)"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 158 (limit: 120)"
+    },
+    {
+      "text": "Technical but respectful voice (doesn't oversimplify K8s, but doesn't overload with jargon either)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/9)"
+    },
+    {
+      "text": "No AI phrases ('I came across your profile', 'I noticed your post')",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": false,
+      "evidence": "Contractions found: [\"you're\"]"
+    }
+  ],
+  "pass_rate": 0.1,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.0,
+    "structure": 0.13333333333333333,
+    "depth": 0.34750000000000003,
+    "voice": 1.0,
+    "composite": 0.32975,
+    "word_count": 158
+  }
+}

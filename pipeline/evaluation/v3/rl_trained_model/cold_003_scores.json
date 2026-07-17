@@ -1,0 +1,67 @@
+{
+  "criteria_pass_rate": 0.18181818181818182,
+  "specificity": 0.7000000000000001,
+  "actionability": 0.1,
+  "structure": 0.13333333333333333,
+  "depth": 0.3815384615384615,
+  "voice": 0.35000000000000003,
+  "composite": 0.2986083916083917,
+  "criteria_grades": [
+    {
+      "text": "Email 2 is sent 3 days after Email 1, Email 3 is sent 5-7 days after Email 2",
+      "passed": true,
+      "evidence": "Term coverage: 67% (4/6)"
+    },
+    {
+      "text": "Each email stands alone (could be read without seeing the previous one)",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Each email adds a new angle or piece of proof (not just 'checking in')",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "None of the emails open with 'Just following up' or 'Just checking in'",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Subject lines are different across all 3 emails",
+      "passed": false,
+      "evidence": "Subject: 'Email 1:' (2 words, lowercase=False)"
+    },
+    {
+      "text": "Each email has one clear, low-friction CTA",
+      "passed": false,
+      "evidence": "Term coverage: 33% (1/3)"
+    },
+    {
+      "text": "Email 3 (breakup email) acknowledges it's the last touch",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "No email asks for a 30-minute meeting",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    },
+    {
+      "text": "Each email is under 100 words",
+      "passed": false,
+      "evidence": "Word count: 342 (limit: 100)"
+    },
+    {
+      "text": "All 3 emails use contractions and sound human",
+      "passed": true,
+      "evidence": "Contractions found: [\"you're\", \"i'm\"]"
+    },
+    {
+      "text": "No email contains AI phrases ('I hope this finds you well', 'leverage', 'synergy')",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    }
+  ],
+  "word_count": 342
+}

@@ -1,0 +1,67 @@
+{
+  "criteria_pass_rate": 0.09090909090909091,
+  "specificity": 0.41666666666666663,
+  "actionability": 0.0,
+  "structure": 0.0,
+  "depth": 0.3418181818181818,
+  "voice": 0.6499999999999999,
+  "composite": 0.20524242424242423,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no punctuation tricks",
+      "passed": false,
+      "evidence": "Subject: 'Dear Sarah,' (2 words, lowercase=False)"
+    },
+    {
+      "text": "Subject line does NOT contain the prospect's first name, product name, or any sales language",
+      "passed": false,
+      "evidence": "Subject: 'Dear Sarah,' (2 words, lowercase=False)"
+    },
+    {
+      "text": "Email opens with an observation about Brightwave (not 'I hope this email finds you well' or 'My name is...')",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Email uses 'you/your' more than 'I/we' (leads with their world)",
+      "passed": true,
+      "evidence": "you/your: 16, I/we/our: 10"
+    },
+    {
+      "text": "Personalization connects to the problem (not just 'Congrats on your raise')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Specific proof point is included (NimbusCRM numbers: 60% reporting time reduction, 23% revenue increase)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (2/10)"
+    },
+    {
+      "text": "Single CTA that is interest-based (e.g., 'Worth exploring?' or 'Would this be useful?')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "No 30-minute meeting request",
+      "passed": false,
+      "evidence": "Banned phrase: 'leading provider'"
+    },
+    {
+      "text": "Email is under 150 words",
+      "passed": false,
+      "evidence": "Word count: 211 (limit: 150)"
+    },
+    {
+      "text": "No jargon: 'synergy', 'leverage', 'best-in-class', 'leading provider' are absent",
+      "passed": false,
+      "evidence": "Banned phrase: 'leading provider'"
+    },
+    {
+      "text": "No feature dump - one proof point is highlighted, not a list of features",
+      "passed": false,
+      "evidence": "Banned phrase: 'leading provider'"
+    }
+  ],
+  "word_count": 211
+}

@@ -1,0 +1,66 @@
+{
+  "eval_id": "cro_003",
+  "run_id": "cro_003_without_skill",
+  "expectations": [
+    {
+      "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Identifies 'Learn More' as a weak, low-commitment CTA and suggests alternatives",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Notes the homepage leads with company story instead of visitor value",
+      "passed": true,
+      "evidence": "Term coverage: 75% (6/8)"
+    },
+    {
+      "text": "Recommends adding product screenshots or a demo video above the fold",
+      "passed": true,
+      "evidence": "Term coverage: 67% (4/6)"
+    },
+    {
+      "text": "Flags the absence of social proof (logos, testimonials, case studies)",
+      "passed": false,
+      "evidence": "Term coverage: 43% (3/7)"
+    },
+    {
+      "text": "Suggests adding a clear value proposition that differentiates from competitors",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Recommends adding pricing or a 'See Pricing' CTA for research-stage visitors",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "Provides at least 2 alternative headlines using outcome-focused or specificity patterns",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Notes that 'Contact Us' is a high-friction CTA for cold visitors",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "At least one recommendation addresses the mixed traffic source context",
+      "passed": true,
+      "evidence": "Term coverage: 71% (5/7)"
+    }
+  ],
+  "pass_rate": 0.6,
+  "scores": {
+    "specificity": 1.0,
+    "actionability": 0.30000000000000004,
+    "structure": 0.85,
+    "depth": 0.8541780821917808,
+    "voice": 0.97,
+    "composite": 0.7199178082191781,
+    "word_count": 1521
+  }
+}

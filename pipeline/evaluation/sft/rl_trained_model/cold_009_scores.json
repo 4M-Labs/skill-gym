@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.0,
+  "specificity": 0.5666666666666667,
+  "actionability": 0.15,
+  "structure": 0.0,
+  "depth": 0.44571428571428573,
+  "voice": 0.6499999999999999,
+  "composite": 0.2529047619047619,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase",
+      "passed": false,
+      "evidence": "Subject: 'Your Startup Needs Monitoring \u2014 Here\u2019s How We Can Help!' (10 words, lowercase=False)"
+    },
+    {
+      "text": "Email acknowledges the bootstrapped context (small team, limited resources, no dedicated DevOps)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "No enterprise language ('scalability', 'enterprise-grade', 'SLA', 'dedicated support team')",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Proof point is relevant to a small team (caught issues early, saved revenue)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "CTA is extremely low-friction (one-line reply)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Email is under 100 words",
+      "passed": false,
+      "evidence": "Word count: 411 (limit: 100)"
+    },
+    {
+      "text": "Voice is direct and no-BS (no corporate polish)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Uses contractions",
+      "passed": false,
+      "evidence": "Contractions found: []"
+    },
+    {
+      "text": "Does not ask for a meeting",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/1)"
+    },
+    {
+      "text": "Every sentence serves the reader (bootstrapped founder's time is precious)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    }
+  ],
+  "word_count": 411
+}

@@ -1,0 +1,57 @@
+{
+  "eval_id": "cro_010",
+  "run_id": "cro_010_with_skill",
+  "expectations": [
+    {
+      "text": "Output follows the 4-section CRO format",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Evaluates the headline as strong and specific (includes 'free' and concrete outcome)",
+      "passed": true,
+      "evidence": "Term coverage: 50% (4/8)"
+    },
+    {
+      "text": "Notes the form is well-optimized with only 4 fields (low friction)",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Recommends adding more social proof (customer count, specific results, testimonials)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Suggests adding a preview of what the audit delivers (sample report, expected findings)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Recommends adding a guarantee or risk reversal beyond 'no spam'",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    },
+    {
+      "text": "Provides at least 2 test ideas specific to this lead gen form",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "At least one copy alternative for the CTA that adds specificity or urgency",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Recommends addressing the 'what happens after I submit?' question",
+      "passed": false,
+      "evidence": "Term coverage: 43% (3/7)"
+    },
+    {
+      "text": "Notes the page handles the traffic source well (B2B, senior roles, specific value prop)",
+      "passed": false,
+      "evidence": "Term coverage: 40% (4/10)"
+    }
+  ],
+  "pass_rate": 0.3
+}

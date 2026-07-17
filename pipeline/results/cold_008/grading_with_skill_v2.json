@@ -1,0 +1,66 @@
+{
+  "eval_id": "cold_008",
+  "run_id": "cold_008_with_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email - PatientFlow to Tom O'Brien' (8 words, lowercase=False)"
+    },
+    {
+      "text": "Opening connects their hiring activity (10+ open roles) to the pain (volume of applicants, time constraints)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Email uses 'you/your' predominantly",
+      "passed": true,
+      "evidence": "you/your: 15, I/we/our: 6"
+    },
+    {
+      "text": "Specific proof point included (RecruitPro: 45\u00e2\u2020\u201928 days time-to-hire, 30% quality improvement)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Single, interest-based CTA",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/2)"
+    },
+    {
+      "text": "Email is under 130 words",
+      "passed": false,
+      "evidence": "Word count: 652 (limit: 130)"
+    },
+    {
+      "text": "No feature dump (don't list all ATS features)",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    },
+    {
+      "text": "No AI phrases ('I hope this finds you well', 'leverage', 'best-in-class')",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    },
+    {
+      "text": "Voice sounds like a peer who understands HR tech operations",
+      "passed": true,
+      "evidence": "Term coverage: 75% (3/4)"
+    },
+    {
+      "text": "No request for a 30-minute call",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    }
+  ],
+  "pass_rate": 0.2,
+  "scores": {
+    "specificity": 0.8,
+    "actionability": 0.0,
+    "structure": 0.85,
+    "depth": 0.6612857142857143,
+    "voice": 0.55,
+    "composite": 0.45862857142857144,
+    "word_count": 652
+  }
+}

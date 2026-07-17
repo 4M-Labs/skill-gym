@@ -1,0 +1,637 @@
+{
+  "tasks": [
+    {
+      "id": "cro_001",
+      "skill": "cro",
+      "prompt": "Analyze this SaaS landing page and provide CRO recommendations. The page is for a project management tool called 'FlowBoard'. Hero headline: 'FlowBoard - Project Management Software'. Subheadline: 'The best way to manage your projects.' CTA button: 'Sign Up'. The page has a features section listing 8 features with bullet points, a pricing table with 3 tiers, and a contact form with 12 fields (name, email, phone, company, company size, industry, budget, timeline, project type, message, how did you hear about us, preferred contact method). No testimonials, no customer logos, no case studies. Traffic comes from Google Ads targeting 'project management software'.",
+      "verification_criteria": [
+        "Output contains a 'Quick Wins' section",
+        "Output contains a 'High-Impact Changes' section",
+        "Output contains a 'Test Ideas' section",
+        "Output contains a 'Copy Alternatives' section with 2-3 headline alternatives",
+        "Identifies the headline as too vague/generic (not specific or outcome-focused)",
+        "Identifies the CTA 'Sign Up' as weak and suggests a stronger alternative",
+        "Identifies the 12-field form as a friction point and recommends reducing fields",
+        "Notes the absence of trust signals (testimonials, logos, case studies)",
+        "Recommends adding social proof near the CTA",
+        "Provides at least one specific CTA copy alternative using the [Action Verb] + [What They Get] pattern"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 output sections present, headline and CTA weaknesses identified, form friction flagged, trust signal gap noted, at least one strong CTA alternative provided",
+        "fail": "Missing any of the 4 required output sections, or fails to identify the headline/CTA/form issues"
+      }
+    },
+    {
+      "id": "cro_002",
+      "skill": "cro",
+      "prompt": "Perform a CRO audit on this e-commerce product page for a wireless noise-canceling headphone called 'SonicPure X1'. The page has: headline 'SonicPure X1 - Premium Wireless Headphones', a product image gallery (5 images), a 'Features' section with 12 technical specs listed as bullet points (driver size, frequency response, battery life, Bluetooth version, etc.), price $299 with a 'Buy Now' button, and a 'Reviews' section showing 4.2 stars from 87 reviews but no written testimonials visible. There is no comparison to competitors, no FAQ section, and no money-back guarantee mentioned. Traffic comes from Instagram ads targeting audiophiles aged 25-40.",
+      "verification_criteria": [
+        "Output is structured with Quick Wins, High-Impact Changes, Test Ideas, and Copy Alternatives sections",
+        "Identifies that the headline is feature-oriented rather than benefit-oriented",
+        "Recommends connecting features to customer outcomes/benefits",
+        "Notes the absence of a guarantee or risk reversal near the CTA",
+        "Recommends surfacing written testimonials from the 87 reviews",
+        "Suggests adding a comparison section or addressing 'why this over competitors'",
+        "Provides alternative headline(s) that are outcome-focused",
+        "Identifies that 12 technical specs may overwhelm non-technical buyers",
+        "Recommends FAQ section to handle objections",
+        "At least one recommendation addresses the pricing page anxiety (is $299 worth it?)"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, feature-to-benefit gap identified, missing guarantee noted, testimonials visibility flagged, at least 2 specific actionable recommendations with rationale",
+        "fail": "Missing sections, or recommendations are generic without tying to specific page elements described"
+      }
+    },
+    {
+      "id": "cro_003",
+      "skill": "cro",
+      "prompt": "Evaluate this B2B SaaS homepage for conversion optimization. The company is 'DataPulse' - an analytics dashboard for e-commerce stores. Current page: Hero headline: 'DataPulse: Advanced Analytics for Modern Commerce'. Subheadline: 'We help businesses make data-driven decisions with our powerful analytics platform.' CTA: 'Learn More'. Below the fold: a paragraph about the company's founding in 2019, a team photo, and a 'Contact Us' form. No pricing info, no product screenshots, no customer logos, no case studies. Navigation has: Home, About, Blog, Contact. Traffic comes from a mix of organic search (queries like 'ecommerce analytics tool') and LinkedIn ads targeting 'Head of E-commerce' roles.",
+      "verification_criteria": [
+        "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+        "Identifies 'Learn More' as a weak, low-commitment CTA and suggests alternatives",
+        "Notes the homepage leads with company story instead of visitor value",
+        "Recommends adding product screenshots or a demo video above the fold",
+        "Flags the absence of social proof (logos, testimonials, case studies)",
+        "Suggests adding a clear value proposition that differentiates from competitors",
+        "Recommends adding pricing or a 'See Pricing' CTA for research-stage visitors",
+        "Provides at least 2 alternative headlines using outcome-focused or specificity patterns",
+        "Notes that 'Contact Us' is a high-friction CTA for cold visitors",
+        "At least one recommendation addresses the mixed traffic source context"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 output sections present, company-centric framing flagged, weak CTAs identified, social proof gap noted, headline alternatives provided with rationale",
+        "fail": "Missing output sections or fails to connect recommendations to the specific traffic context"
+      }
+    },
+    {
+      "id": "cro_004",
+      "skill": "cro",
+      "prompt": "Run a CRO analysis on this pricing page for 'CloudHost' - a cloud hosting provider. The page shows 3 plans in a table: Starter ($9/mo), Professional ($29/mo), Enterprise ($99/mo). Each plan lists features as bullet points. The Professional plan has a 'Recommended' badge. There is no explanation of what each plan is best for, no FAQ about plan differences, no toggle for monthly vs annual pricing, and no money-back guarantee. The CTA on each plan is 'Get Started'. There are no customer testimonials or trust signals on this page. Traffic is mostly organic from searches like 'cloud hosting pricing'.",
+      "verification_criteria": [
+        "Output follows the 4-section format (Quick Wins, High-Impact Changes, Test Ideas, Copy Alternatives)",
+        "Identifies that the page lacks guidance on 'which plan is right for me'",
+        "Recommends adding plan descriptions or use-case matching (e.g., 'Best for solo developers')",
+        "Notes the absence of annual pricing toggle and suggests adding one",
+        "Identifies 'Get Started' as a generic CTA and provides plan-specific alternatives",
+        "Recommends adding a guarantee or risk reversal",
+        "Suggests adding social proof (customer count, testimonials, logos) near pricing",
+        "Provides at least 2 CTA alternatives that communicate value (not just action)",
+        "Recommends adding an FAQ section addressing common pricing objections",
+        "At least one test idea specifically targets the pricing page layout or comparison flow"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, 'which plan is right for me' anxiety addressed, CTA weakness identified, annual toggle suggested, FAQ recommendation included",
+        "fail": "Missing required sections or recommendations don't address the specific pricing page patterns described"
+      }
+    },
+    {
+      "id": "cro_005",
+      "skill": "cro",
+      "prompt": "Provide CRO feedback on this blog post page for 'MindfulApp' - a meditation app. The blog post is titled '10 Science-Backed Benefits of Daily Meditation'. The content is a 2000-word article with good information. At the very bottom of the post, there is a single CTA: a banner that says 'Download MindfulApp - Available on iOS and Android'. No inline CTAs, no content upgrades, no related posts, no email capture. The sidebar has a generic newsletter signup: 'Subscribe to our newsletter'. Traffic comes from Google searches for meditation benefits.",
+      "verification_criteria": [
+        "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+        "Identifies that a single bottom-of-post CTA misses multiple stopping points",
+        "Recommends adding inline CTAs at natural content breaks (e.g., after benefits 3, 6, 9)",
+        "Suggests a content-specific lead magnet (e.g., meditation starter guide, daily meditation checklist)",
+        "Notes the generic newsletter signup and suggests making it topic-relevant",
+        "Recommends a contextual CTA that matches the blog post topic (not generic app download)",
+        "Provides at least 2 alternative CTA copy options tied to meditation benefits",
+        "Suggests adding a 'Related Posts' section to increase session depth",
+        "At least one recommendation addresses capturing visitors who aren't ready to download yet",
+        "CTA alternatives avoid weak patterns like 'Learn More' or 'Click Here'"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, inline CTA opportunity identified, content-matched CTA suggested, generic newsletter flagged, at least 2 specific CTA alternatives",
+        "fail": "Missing sections or recommendations are generic blog advice not tied to the meditation app context"
+      }
+    },
+    {
+      "id": "cro_006",
+      "skill": "cro",
+      "prompt": "Analyze this landing page used for Facebook ads. The page is for 'FitTrack Pro' - a fitness tracking app. The Facebook ad promises 'Lose 10 pounds in 30 days with personalized workout plans'. The landing page headline: 'Welcome to FitTrack Pro'. Subheadline: 'Your fitness journey starts here.' The page has: a hero image of a person running, a section about the app's features (GPS tracking, calorie counting, social sharing, workout library), an app store download buttons section, and a footer. No testimonials, no before/after results, no mention of the '10 pounds in 30 days' claim from the ad. Navigation bar is present with Home, Features, Pricing, Blog, About links.",
+      "verification_criteria": [
+        "Output follows the 4-section CRO format",
+        "Identifies message mismatch between the ad ('lose 10 pounds in 30 days') and the landing page headline",
+        "Recommends headline that mirrors the ad's promise or addresses the specific outcome",
+        "Notes the navigation bar undermines single-page focus for paid traffic",
+        "Recommends removing or simplifying navigation for this paid landing page",
+        "Flags the absence of proof for the '10 pounds in 30 days' claim (testimonials, before/after, case studies)",
+        "Identifies 'Welcome to FitTrack Pro' as a weak, company-centric headline",
+        "Provides at least 2 alternative headlines using the outcome-focused or specificity pattern",
+        "Recommends adding a risk reversal (free trial, money-back guarantee)",
+        "At least one test idea addresses the message match or navigation removal"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, ad-to-page message mismatch identified, navigation bar flagged as friction for paid traffic, headline alternatives provided, social proof gap noted",
+        "fail": "Missing sections or fails to identify the critical ad-to-page message mismatch"
+      }
+    },
+    {
+      "id": "cro_007",
+      "skill": "cro",
+      "prompt": "Review this signup flow for 'TeamCollab' - a team communication tool. The signup page has: headline 'Create Your Account', a form with fields: Work Email, Password, Confirm Password, Full Name, Job Title, Company Name, Company Size (dropdown: 1-10, 11-50, 51-200, 201-500, 500+), Industry (dropdown), How did you hear about us (dropdown), Terms of Service checkbox. There is a 'Create Account' button. Below the form: a paragraph about data privacy and SOC 2 compliance. No social proof, no mention of free trial, no skip option. Traffic comes from organic search for 'team chat app'.",
+      "verification_criteria": [
+        "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+        "Identifies the form has too many fields for a signup flow (8 fields + checkbox)",
+        "Recommends reducing to essential fields (email, password, name) and collecting the rest post-signup",
+        "Notes the headline 'Create Your Account' is functional but not motivating",
+        "Recommends adding a benefit-oriented headline or subheadline",
+        "Identifies the absence of social proof near the signup form",
+        "Recommends adding a free trial mention or risk reversal near the CTA",
+        "Provides at least 2 alternative CTA buttons (not just 'Create Account')",
+        "Suggests splitting into multi-step form if many fields are truly required",
+        "At least one recommendation addresses reducing perceived commitment"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, form field count flagged as friction, headline improvement suggested, social proof gap noted, CTA alternatives provided, at least one field reduction or multi-step recommendation",
+        "fail": "Missing sections or doesn't address the excessive form fields as a conversion barrier"
+      }
+    },
+    {
+      "id": "cro_008",
+      "skill": "cro",
+      "prompt": "Perform CRO analysis on this feature page for 'WriteRight' - an AI writing assistant. The page is for the 'Grammar Check' feature. Headline: 'Grammar Check Feature'. Body: a paragraph explaining how the grammar check works technically (NLP models, transformer architecture, training data). A screenshot of the grammar check UI. A 'Try It Now' CTA button. No explanation of the benefit to the user, no use cases, no before/after examples of grammar corrections, no testimonials from users who improved their writing. Traffic comes from organic searches like 'AI grammar checker'.",
+      "verification_criteria": [
+        "Output follows the 4-section CRO format",
+        "Identifies that the headline is feature-named rather than benefit-oriented",
+        "Recommends rewriting headline to connect feature to customer outcome",
+        "Notes the technical jargon (NLP, transformer architecture) is inappropriate for the audience",
+        "Recommends replacing technical explanation with user benefit language",
+        "Suggests adding before/after examples showing actual grammar corrections",
+        "Recommends use cases (e.g., 'Perfect for emails, reports, and proposals')",
+        "Provides at least 2 alternative headlines using the feature → benefit → outcome pattern",
+        "Notes the page lacks a clear path to try or buy beyond the single CTA",
+        "At least one recommendation addresses making the feature tangible through examples"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, technical jargon flagged, benefit-over-feature principle applied, headline alternatives provided, before/after examples recommended",
+        "fail": "Missing sections or fails to identify the feature-focused vs benefit-focused problem"
+      }
+    },
+    {
+      "id": "cro_009",
+      "skill": "cro",
+      "prompt": "Evaluate this about page for 'GreenLeaf Capital' - a sustainable investment firm. The page has: headline 'About GreenLeaf Capital', a paragraph about the company's mission to 'provide innovative sustainable investment solutions', a timeline of company milestones (founded 2015, office in NYC 2017, $100M AUM 2019, London office 2021), team photos of 6 partners with names and titles, and a 'Contact Us' CTA at the bottom. No client testimonials, no investment performance data, no explanation of what makes them different from other sustainable investment firms. Traffic comes from organic searches and referrals from financial advisors.",
+      "verification_criteria": [
+        "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+        "Identifies that the page tells company facts but doesn't connect mission to client benefit",
+        "Recommends leading with client outcomes instead of company milestones",
+        "Notes the absence of proof points (performance data, client testimonials, AUM growth story)",
+        "Recommends adding a differentiator section ('Why GreenLeaf vs. other firms')",
+        "Identifies that 'Contact Us' is a high-friction CTA for an about page",
+        "Recommends a softer CTA or next step (e.g., 'See Our Approach', 'Download Our Impact Report')",
+        "Provides at least 2 alternative headlines that connect to investor value",
+        "Suggests adding client logos or advisory board credentials for trust",
+        "At least one recommendation addresses the financial advisor referral context"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, company-centric vs client-centric framing identified, differentiator gap noted, proof points recommended, CTA friction addressed",
+        "fail": "Missing sections or recommendations are generic without addressing the financial services context"
+      }
+    },
+    {
+      "id": "cro_010",
+      "skill": "cro",
+      "prompt": "Analyze this lead capture form page for 'CloudScale' - a cloud cost optimization platform. The page has: headline 'Get Your Free Cloud Cost Audit', subheadline 'Our AI analyzes your cloud spending and finds savings opportunities', a form with: Work Email, Company Name, Cloud Provider (AWS/Azure/GCP dropdown), Monthly Cloud Spend (dropdown: <$10K, $10K-$50K, $50K-$200K, $200K+), and a 'Get My Audit' CTA button. Below the form: 'We respect your privacy. No spam ever.' Trust signals: logos of 3 customer companies (unnamed in the description). Traffic comes from LinkedIn ads targeting 'VP of Engineering' and 'Cloud Architect' roles.",
+      "verification_criteria": [
+        "Output follows the 4-section CRO format",
+        "Evaluates the headline as strong and specific (includes 'free' and concrete outcome)",
+        "Notes the form is well-optimized with only 4 fields (low friction)",
+        "Recommends adding more social proof (customer count, specific results, testimonials)",
+        "Suggests adding a preview of what the audit delivers (sample report, expected findings)",
+        "Recommends adding a guarantee or risk reversal beyond 'no spam'",
+        "Provides at least 2 test ideas specific to this lead gen form",
+        "At least one copy alternative for the CTA that adds specificity or urgency",
+        "Recommends addressing the 'what happens after I submit?' question",
+        "Notes the page handles the traffic source well (B2B, senior roles, specific value prop)"
+      ],
+      "scoring_rubric": {
+        "pass": "All 4 sections present, strengths acknowledged (good headline, low-friction form), social proof enhancement recommended, at least 2 test ideas, CTA alternatives provided",
+        "fail": "Only identifies problems without acknowledging what's working, or misses the opportunity to enhance an already decent page"
+      }
+    },
+    {
+      "id": "copy_001",
+      "skill": "copywriting",
+      "prompt": "Write homepage copy for 'NestHub' - a smart home hub that connects all your devices. Product: A small white device that sits on your counter and controls lights, thermostat, locks, and cameras from one app. Key differentiator: Works with 500+ devices from any brand (unlike competitors that only work with their own ecosystem). Target audience: Tech-curious homeowners aged 30-50 who have tried smart home devices but are frustrated by needing 5 different apps. They want simplicity. Traffic comes from Google Ads targeting 'smart home hub' and 'unified smart home'. Voice should be friendly and accessible, not technical.",
+      "verification_criteria": [
+        "Output contains Page Copy organized by section (Headline, Subheadline, CTA, body sections)",
+        "Output contains Annotations explaining key copy decisions",
+        "Output contains Alternatives with 2-3 headline options and rationale",
+        "Headline uses an outcome-focused or pain-point pattern (not generic 'Meet NestHub')",
+        "Copy uses customer language (not 'IoT ecosystem' or 'interoperability')",
+        "Subheadline adds specificity (mentions device count or specific pain relief)",
+        "CTA communicates value (not just 'Sign Up' or 'Learn More')",
+        "Copy follows 'Clarity Over Cleverness' principle",
+        "No exclamation points in the body copy",
+        "At least one section uses a rhetorical question to engage the reader"
+      ],
+      "scoring_rubric": {
+        "pass": "All 3 output sections present, headline is outcome-focused, customer language used, CTA is value-driven, annotations explain reasoning, alternatives provided with rationale",
+        "fail": "Missing any output section, or copy uses feature-focused/technical language instead of customer language"
+      }
+    },
+    {
+      "id": "copy_002",
+      "skill": "copywriting",
+      "prompt": "Write landing page copy for 'MealPrep AI' - an AI meal planning app. Product: An app that generates personalized weekly meal plans based on your dietary preferences, allergies, budget, and the groceries you already have. It also generates a smart shopping list. Price: $7.99/month or $59.99/year. Target audience: Busy working parents (30-45) who want to eat healthy but spend too much time deciding what to cook. They're overwhelmed by meal prep content online. This is a paid landing page from Facebook ads with the hook 'Stop stressing about what's for dinner'. Voice: warm, empathetic, slightly humorous.",
+      "verification_criteria": [
+        "Output contains Page Copy, Annotations, and Alternatives sections",
+        "Headline matches or connects to the ad hook ('what's for dinner' / dinner stress)",
+        "Copy addresses the specific pain (decision fatigue, time, overwhelm) not just features",
+        "Benefits are specific (e.g., 'Save 3 hours a week on meal planning' not 'Save time')",
+        "CTA is action-oriented and communicates what they get (e.g., 'Start My Meal Plan' not 'Sign Up')",
+        "Copy uses active voice throughout",
+        "No marketing buzzwords ('revolutionary', 'game-changing', 'cutting-edge')",
+        "Subheadline is 1-2 sentences max and adds specificity",
+        "At least one section uses an analogy or concrete example",
+        "Annotations cite specific copywriting principles for key decisions"
+      ],
+      "scoring_rubric": {
+        "pass": "All 3 output sections present, ad-to-page message match, specific benefits (not vague), active voice, no buzzwords, CTA follows [Action] + [What They Get] formula",
+        "fail": "Missing sections, or copy is feature-heavy without connecting to parent pain points"
+      }
+    },
+    {
+      "id": "copy_003",
+      "skill": "copywriting",
+      "prompt": "Write pricing page copy for 'DesignFlow' - a collaborative design tool for marketing teams. Three tiers: Starter ($15/user/mo) - 5 users, basic templates, 10GB storage; Team ($30/user/mo) - 25 users, brand kit, 100GB storage, approval workflows; Enterprise (custom) - unlimited users, SSO, dedicated support, SLA. Target audience: Marketing managers at mid-size companies (50-500 employees) who are comparing to Canva, Figma, and Adobe Express. They need team collaboration features and brand consistency. Voice: professional but approachable.",
+      "verification_criteria": [
+        "Output contains Page Copy, Annotations, and Alternatives sections",
+        "Copy addresses 'which plan is right for me?' anxiety directly",
+        "Each plan has a clear use-case description (not just feature lists)",
+        "Recommended plan is indicated with supporting copy",
+        "Copy differentiates from competitors (Canva, Figma, Adobe) without being negative",
+        "CTAs are plan-specific (e.g., 'Start Team Trial' not generic 'Get Started')",
+        "Copy includes risk reversal (free trial, money-back guarantee, or migration support)",
+        "Headline or section header uses specificity (e.g., pricing starts at or per-user pricing)",
+        "At least one annotation explains why a specific plan is recommended",
+        "No exclamation points in the copy"
+      ],
+      "scoring_rubric": {
+        "pass": "All 3 output sections present, plan differentiation clear, 'which plan' anxiety addressed, competitor context acknowledged, CTAs are plan-specific, risk reversal included",
+        "fail": "Missing sections, or plans are described only as feature lists without use-case guidance"
+      }
+    },
+    {
+      "id": "copy_004",
+      "skill": "copywriting",
+      "prompt": "Write hero section copy for 'SecureVault' - an encrypted password manager for small businesses. Product: Stores and auto-fills passwords, generates strong passwords, alerts on breaches, and shares credentials securely with team members. $4.99/user/month. Target audience: Small business owners (10-50 employees) who are currently using shared spreadsheets or sticky notes for passwords. They know it's insecure but think enterprise tools are overkill. Voice: confident, straightforward, no fear-mongering.",
+      "verification_criteria": [
+        "Output contains Headline, Subheadline, Primary CTA, and at least 2 alternative headlines",
+        "Headline addresses the specific pain (shared spreadsheets/sticky notes) or the desired outcome (security without complexity)",
+        "Copy does NOT use fear-based messaging ('Your passwords are at risk!', 'Hackers are targeting you')",
+        "Subheadline is 1-2 sentences and adds a specific detail (price, feature count, or setup time)",
+        "CTA follows the [Action Verb] + [What They Get] formula",
+        "Copy is written in customer language (not 'enterprise-grade encryption' or 'zero-knowledge architecture')",
+        "At least one alternative headline uses the '{Achieve outcome} without {pain point}' formula",
+        "No exclamation points in any copy",
+        "Active voice used throughout",
+        "Annotations explain the reasoning behind the primary headline choice"
+      ],
+      "scoring_rubric": {
+        "pass": "All output sections present, no fear-mongering, customer language used, CTA formula applied, headline alternatives provided with rationale, annotations present",
+        "fail": "Uses fear-based messaging, or headline is generic ('SecureVault - Password Manager for Business')"
+      }
+    },
+    {
+      "id": "copy_005",
+      "skill": "copywriting",
+      "prompt": "Rewrite this feature page copy for 'TaskPilot' - an AI-powered task management tool. Current headline: 'TaskPilot Leverages Advanced AI to Optimize Your Task Workflow'. Current body: 'Our cutting-edge machine learning algorithms analyze your task patterns and utilize predictive analytics to streamline your productivity pipeline. Experience next-generation task orchestration that revolutionizes how your team collaborates.' Target audience: Project managers at agencies who use Asana or Trello and want to reduce manual task prioritization. Voice: professional, clear, no jargon.",
+      "verification_criteria": [
+        "Rewritten headline replaces jargon with clear benefit language",
+        "Body copy uses simple words ('use' not 'utilize', 'help' not 'facilitate')",
+        "No marketing buzzwords remain ('cutting-edge', 'next-generation', 'revolutionize', 'leverage')",
+        "Copy connects the AI feature to a specific customer outcome (less time prioritizing, better team focus)",
+        "Active voice is used throughout the rewrite",
+        "Copy includes a specific proof point or example of the outcome",
+        "Output includes annotations explaining what was changed and why",
+        "At least 2 headline alternatives are provided",
+        "CTA is specific and value-oriented",
+        "Rewrite passes the 'read it aloud' test - sounds like a human, not a brochure"
+      ],
+      "scoring_rubric": {
+        "pass": "All jargon eliminated, feature-to-benefit connection made, active voice used, annotations explain changes, alternatives provided, no buzzwords",
+        "fail": "Jargon remains, or rewrite is still feature-focused without connecting to customer outcome"
+      }
+    },
+    {
+      "id": "copy_006",
+      "skill": "copywriting",
+      "prompt": "Write about page copy for 'CodeBridge' - a developer tools company that makes APIs easier to integrate. Founded by 3 engineers who got tired of poor API documentation. The company has 200+ business customers, processes 1 billion API calls/month, and was featured in TechCrunch. Target audience: CTOs and senior developers at startups. Voice: technical but warm, peer-level, no corporate speak.",
+      "verification_criteria": [
+        "Output contains Page Copy organized by section and Annotations",
+        "Story of founding connects to customer pain (poor API docs) not just founder bio",
+        "Copy includes specific proof points (200+ customers, 1B calls, TechCrunch) in context",
+        "Mission is connected to customer benefit (not just 'we使命是 to democratize API integration')",
+        "Copy includes a CTA (the skill says about pages should still have a CTA)",
+        "Voice matches the technical audience (no dumbed-down language, but no jargon either)",
+        "Headline or opening connects to the 'why' of the company",
+        "No exclamation points",
+        "At least one section uses specific numbers or outcomes instead of vague claims",
+        "Annotations explain voice/tone choices for the technical audience"
+      ],
+      "scoring_rubric": {
+        "pass": "Founding story connects to customer pain, proof points integrated naturally, CTA present, technical-appropriate voice, no corporate speak, annotations explain choices",
+        "fail": "About page reads as a generic company bio without connecting to customer value, or missing CTA"
+      }
+    },
+    {
+      "id": "copy_007",
+      "skill": "copywriting",
+      "prompt": "Write CTA copy for a 7-page website for 'FreshBooks Cloud' - an accounting software for freelancers. The site needs CTAs for: Homepage hero, Homepage bottom, Features page, Pricing page (3 tiers), Case Studies page, About page, and Contact page. Product: Cloud accounting with invoicing, expense tracking, time tracking, and tax prep. Target: Freelancers and solo consultants who hate bookkeeping. Voice: friendly, reassuring, slightly playful.",
+      "verification_criteria": [
+        "All 7 CTAs are provided and each is unique (not copy-pasted across pages)",
+        "No CTA uses weak patterns ('Sign Up', 'Learn More', 'Submit', 'Click Here', 'Get Started')",
+        "Each CTA follows the [Action Verb] + [What They Get] formula",
+        "CTAs are context-appropriate (e.g., Pricing page CTA mentions pricing or plan, Features page CTA mentions trying the feature)",
+        "CTAs match the friendly/reassuring voice (not corporate or aggressive)",
+        "At least one CTA includes a qualifier (e.g., 'Free', 'My', 'Your')",
+        "No exclamation points in any CTA",
+        "CTAs are short (under 6 words each)",
+        "Homepage hero CTA is the strongest/most compelling of the set",
+        "Annotations explain why each CTA was chosen for its specific page context"
+      ],
+      "scoring_rubric": {
+        "pass": "All 7 CTAs present and unique, no weak patterns, formula applied, context-appropriate, annotations explain choices",
+        "fail": "CTAs are repetitive across pages, or any use weak patterns like 'Sign Up' or 'Learn More'"
+      }
+    },
+    {
+      "id": "copy_008",
+      "skill": "copywriting",
+      "prompt": "Write landing page copy for a new feature launch: 'Instant Reports' in 'DataDash' - a business analytics platform. The feature automatically generates weekly performance reports with AI insights and sends them to stakeholders. Current competitors require manual report building. Target audience: Marketing directors at agencies who spend 2-4 hours weekly building client reports. Voice: professional, confident, emphasizing time savings.",
+      "verification_criteria": [
+        "Output contains Page Copy, Annotations, and Alternatives sections",
+        "Headline communicates the outcome (time saved, reports automated) not just the feature name",
+        "Copy addresses the specific pain (2-4 hours weekly on reports)",
+        "Feature is connected to benefit → outcome chain (auto-generate → save time → focus on strategy)",
+        "Copy differentiates from manual report building (the competitor approach)",
+        "CTA communicates what they get (e.g., 'Automate My Reports' not 'Try Instant Reports')",
+        "Subheadline adds a specific detail (time savings, frequency, or ease of setup)",
+        "Copy uses 'you/your' more than 'we/our'",
+        "At least one section uses a before/after comparison",
+        "No exclamation points in body copy"
+      ],
+      "scoring_rubric": {
+        "pass": "All 3 output sections present, outcome-focused headline, specific pain addressed, feature→benefit→outcome chain, time savings quantified, CTA is value-driven",
+        "fail": "Copy is feature-focused without connecting to the marketing director's pain of building reports"
+      }
+    },
+    {
+      "id": "copy_009",
+      "skill": "copywriting",
+      "prompt": "Write email capture section copy for the blog of 'GrowthStack' - a marketing analytics tool. The blog publishes articles about SEO, paid ads, and content marketing. The email capture appears at the bottom of every blog post. Current copy: 'Subscribe to our newsletter for updates.' Target audience: Marketing managers at B2B SaaS companies. Voice: professional, authoritative, value-first.",
+      "verification_criteria": [
+        "Headline for the email capture section is specific (not 'Subscribe to our newsletter')",
+        "Copy communicates what subscribers get (not just 'updates')",
+        "Specific content examples are mentioned (e.g., 'weekly SEO tips', 'monthly benchmark reports')",
+        "CTA communicates the value of subscribing (e.g., 'Get Weekly Marketing Insights' not 'Subscribe')",
+        "Copy addresses 'what's in it for me?' for the marketing manager audience",
+        "At least 2 alternative headlines/CTAs are provided",
+        "Copy is concise (email capture sections should be short)",
+        "No exclamation points",
+        "Annotations explain why the chosen approach works for this blog audience",
+        "Copy avoids generic promises ('stay informed', 'get the latest')"
+      ],
+      "scoring_rubric": {
+        "pass": "Specific value proposition for subscribing, concrete content examples, CTA is value-driven, alternatives provided, concise copy, annotations present",
+        "fail": "Generic newsletter signup copy without specific value or content examples"
+      }
+    },
+    {
+      "id": "copy_010",
+      "skill": "copywriting",
+      "prompt": "Write hero section copy for 'PetPal' - a pet sitting marketplace connecting pet owners with vetted sitters. Similar to Airbnb but for pet care. Key differentiator: All sitters are verified with background checks, pet first aid certified, and have video meet-and-greets before booking. Target audience: Pet owners aged 25-40 who travel for work and feel guilty leaving their pets with strangers. They've used kennels before but want more personal care. Voice: warm, reassuring, trustworthy.",
+      "verification_criteria": [
+        "Output contains Headline, Subheadline, CTA, and at least 2 headline alternatives",
+        "Headline addresses the emotional pain (guilt, worry about pet) not just the service",
+        "Copy communicates trust and safety (background checks, certification, video meet) without sounding clinical",
+        "Subheadline adds specificity (mentions a verification detail or the meet-and-greet feature)",
+        "CTA communicates the outcome (e.g., 'Find My Pet Sitter' not 'Browse Sitters')",
+        "Copy uses customer language and emotional resonance ('peace of mind', 'like family')",
+        "At least one headline alternative uses the '{Achieve outcome} without {pain point}' formula",
+        "No exclamation points",
+        "Active voice used throughout",
+        "Annotations explain the emotional approach chosen for this audience"
+      ],
+      "scoring_rubric": {
+        "pass": "Emotional pain addressed, trust signals woven into copy naturally, CTA is outcome-focused, alternatives provided with rationale, warm/reassuring voice maintained, annotations present",
+        "fail": "Copy is transactional ('Book a pet sitter') without addressing the emotional component of leaving a pet with a stranger"
+      }
+    },
+    {
+      "id": "cold_001",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Sarah Chen, VP of Marketing at Brightwave (a 200-person B2B SaaS company that just raised $40M Series C). You're selling DataPulse - an analytics dashboard that helps marketing teams track campaign ROI across channels. Value prop: Brightwave is likely running 5+ marketing channels and probably lacks a unified view of which campaigns drive pipeline. Proof: You helped a similar company (NimbusCRM, also in B2B SaaS, 150 employees) reduce reporting time by 60% and increased marketing-sourced revenue by 23% in Q1. Goal: Get a 15-minute intro call.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, no punctuation tricks",
+        "Subject line does NOT contain the prospect's first name, product name, or any sales language",
+        "Email opens with an observation about Brightwave (not 'I hope this email finds you well' or 'My name is...')",
+        "Email uses 'you/your' more than 'I/we' (leads with their world)",
+        "Personalization connects to the problem (not just 'Congrats on your raise')",
+        "Specific proof point is included (NimbusCRM numbers: 60% reporting time reduction, 23% revenue increase)",
+        "Single CTA that is interest-based (e.g., 'Worth exploring?' or 'Would this be useful?')",
+        "No 30-minute meeting request",
+        "Email is under 150 words",
+        "No jargon: 'synergy', 'leverage', 'best-in-class', 'leading provider' are absent",
+        "No feature dump - one proof point is highlighted, not a list of features"
+      ],
+      "scoring_rubric": {
+        "pass": "Subject line follows rules, observation-based opening, specific proof included, single low-friction CTA, under 150 words, no banned phrases, personalization connects to problem",
+        "fail": "Opens with self-introduction, asks for a meeting directly, includes feature list, or subject line is promotional"
+      }
+    },
+    {
+      "id": "cold_002",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Marcus Rodriguez, CTO at HealthBridge (a 50-person health tech startup, Series A, hiring 3 backend engineers). You're selling CloudDeploy - a deployment platform that simplifies infrastructure for small teams. Value prop: With only 3 backend engineers, they're probably spending too much time on infrastructure instead of product. Proof: You helped MedFlow (40-person health tech) cut deployment time from 2 hours to 12 minutes and freed up 1 engineer day per week. Goal: Get a reply (not a meeting).",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, no emojis",
+        "Email does NOT open with 'I hope this email finds you well' or 'My name is X'",
+        "Opening references something specific about HealthBridge (hiring, their product, or their stage)",
+        "Email uses contractions (sounds human, not like a template)",
+        "The personalized observation naturally leads to why you're reaching out",
+        "One specific proof point is included (MedFlow numbers)",
+        "CTA is interest-based and low-friction (e.g., 'Relevant?' or 'Worth a look?')",
+        "No asking for a 30-minute call",
+        "Email is under 120 words",
+        "Every sentence serves the reader, not the sender",
+        "No AI-telltale phrases ('I came across your profile', 'leverage', 'best-in-class')"
+      ],
+      "scoring_rubric": {
+        "pass": "Subject line correct, no self-intro opening, contractions used, specific proof, low-friction CTA, under 120 words, no AI phrases, personalization connected to problem",
+        "fail": "Uses template patterns ('I came across...', 'I wanted to reach out'), or asks for a meeting directly"
+      }
+    },
+    {
+      "id": "cold_003",
+      "skill": "cold-email",
+      "prompt": "Write a 3-email follow-up sequence for cold outreach to Priya Patel, Head of People at WorkNest (a 120-person remote-first company that recently posted 5 job openings on LinkedIn). You're selling TeamSync - a remote team onboarding platform. Email 1 was sent 3 days ago (assume it didn't get a reply). Goal: Get a reply or meeting.",
+      "verification_criteria": [
+        "Email 2 is sent 3 days after Email 1, Email 3 is sent 5-7 days after Email 2",
+        "Each email stands alone (could be read without seeing the previous one)",
+        "Each email adds a new angle or piece of proof (not just 'checking in')",
+        "None of the emails open with 'Just following up' or 'Just checking in'",
+        "Subject lines are different across all 3 emails",
+        "Each email has one clear, low-friction CTA",
+        "Email 3 (breakup email) acknowledges it's the last touch",
+        "No email asks for a 30-minute meeting",
+        "Each email is under 100 words",
+        "All 3 emails use contractions and sound human",
+        "No email contains AI phrases ('I hope this finds you well', 'leverage', 'synergy')"
+      ],
+      "scoring_rubric": {
+        "pass": "3 emails with proper cadence, each standalone with new angle, no 'checking in', breakup email included, under 100 words each, contractions used throughout",
+        "fail": "Emails are variations of the same message, or Email 3 doesn't function as a breakup email"
+      }
+    },
+    {
+      "id": "cold_004",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to James Liu, VP of Engineering at FinScale (a 300-person fintech company, Series B, recently SOC 2 compliant). You're selling SecureStack - a developer security training platform. Value prop: They just achieved SOC 2 but now need to maintain security culture as they scale engineering from 30 to 50 engineers. Proof: You helped PaySecure (250-person fintech) reduce security incidents by 40% in 6 months after onboarding. Goal: Get a reply expressing interest.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, looks internal/collegial",
+        "Opening connects the SOC 2 achievement to the ongoing challenge (maintaining security culture at scale)",
+        "Email leads with their world (the challenge of scaling engineering while staying secure)",
+        "One specific proof point is included (PaySecure: 40% incident reduction in 6 months)",
+        "CTA is interest-based (not 'Can we schedule a call?')",
+        "Email uses 'you/your' predominantly over 'I/we'",
+        "Email is under 130 words",
+        "No feature dump - focuses on the outcome (fewer incidents, maintained security culture)",
+        "Voice sounds like a peer who understands fintech engineering challenges",
+        "No fake urgency ('limited time offer', 'before it's too late')"
+      ],
+      "scoring_rubric": {
+        "pass": "Trigger-based opening (SOC 2 + scaling), peer-level voice, specific proof, interest-based CTA, under 130 words, no feature dump, no urgency tactics",
+        "fail": "Opens with company introduction, dumps features, or creates artificial urgency"
+      }
+    },
+    {
+      "id": "cold_005",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Elena Vasquez, Marketing Director at StyleHub (a 80-person DTC fashion brand, recently featured in Vogue). You're selling AdOptimize - an AI-powered ad creative testing platform. Value prop: As a fashion brand just featured in Vogue, they're likely scaling ad spend and need to test creative faster. Proof: You helped ThreadCraft (similar DTC fashion brand) improve ROAS by 35% by testing 10x more creative variants. Goal: Get a reply.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, no emojis or exclamation points",
+        "Opening references the Vogue feature naturally (not as flattery, but as a trigger for the conversation)",
+        "Email connects the trigger (Vogue feature) to the challenge (scaling ad creative testing)",
+        "Specific proof point included (ThreadCraft: 35% ROAS improvement, 10x creative variants)",
+        "Single, low-friction CTA",
+        "Email is under 120 words",
+        "No AI-telltale patterns ('I came across', 'I noticed', 'congratulations on')",
+        "Uses contractions and sounds human",
+        "Every sentence serves the reader (not the sender)",
+        "Does not mention your company name until after establishing value"
+      ],
+      "scoring_rubric": {
+        "pass": "Trigger-based opening, connects to their challenge, specific proof, low-friction CTA, under 120 words, human voice, no AI patterns",
+        "fail": "Opens with congratulations as flattery (not connected to the problem), or includes feature list"
+      }
+    },
+    {
+      "id": "cold_006",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to David Park, CEO at GreenLeaf Logistics (a 400-person logistics company, traditional industry, likely less tech-savvy). You're selling RouteOptima - an AI route optimization tool. Value prop: They're probably still using manual route planning or legacy software, leading to fuel waste and late deliveries. Proof: You helped FastFreight (350-person logistics) reduce fuel costs by 18% and improve on-time delivery from 87% to 96%. Goal: Get a reply. Note: David is C-suite so the email should be ultra-brief and peer-level.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, looks like internal communication",
+        "Email is ultra-brief (under 80 words for C-suite)",
+        "Opening is direct and peer-level (no deferential language)",
+        "Value is communicated in terms David cares about (cost savings, delivery performance, competitive advantage)",
+        "One proof point that speaks to business outcomes (fuel costs, on-time delivery rate)",
+        "CTA is extremely low-friction for a CEO (one-line reply, not a meeting request)",
+        "No technical jargon (no 'AI-powered', 'machine learning', 'algorithm')",
+        "Uses contractions",
+        "Sounds like a peer who understands logistics business, not a tech vendor",
+        "No more than 5 sentences total"
+      ],
+      "scoring_rubric": {
+        "pass": "Under 80 words, C-suite appropriate brevity, business-outcome focused, no tech jargon, ultra-low-friction CTA, peer-level voice",
+        "fail": "Too long for C-suite (>100 words), uses technical language, or asks for a meeting"
+      }
+    },
+    {
+      "id": "cold_007",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Tomoko Sato, Engineering Manager at MediaFlow (a 150-person media tech company, uses AWS, recently posted about Kubernetes challenges on LinkedIn). You're selling KubeEasy - a Kubernetes management platform. Value prop: Her LinkedIn post about K8s complexity signals a pain point you can solve. Proof: You helped StreamTech (similar media tech company) reduce Kubernetes incident response time by 50% and saved 20 engineering hours per week. Goal: Get a reply.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, no punctuation tricks",
+        "Opening references the LinkedIn post directly (the research signal)",
+        "Personalization connects the post to the problem (K8s complexity) and naturally leads to why you're reaching out",
+        "Email would NOT make sense if you removed the personalized opening (personalization is essential, not decorative)",
+        "One proof point with specific numbers (50% incident response time, 20 hours/week saved)",
+        "CTA is interest-based and low-friction",
+        "Email is under 120 words",
+        "Technical but respectful voice (doesn't oversimplify K8s, but doesn't overload with jargon either)",
+        "No AI phrases ('I came across your profile', 'I noticed your post')",
+        "Uses contractions"
+      ],
+      "scoring_rubric": {
+        "pass": "References LinkedIn post naturally, personalization is essential to the email's logic, specific proof, technical-appropriate voice, under 120 words, no AI patterns",
+        "fail": "Personalization is decorative (could be removed without breaking the email), or opens with generic LinkedIn observation"
+      }
+    },
+    {
+      "id": "cold_008",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Rachel Kim, COO at TalentSync (a 250-person HR tech company, Series B, hiring 10+ roles across departments). You're selling HireFlow - an applicant tracking system with AI candidate matching. Value prop: They're hiring aggressively and likely experiencing the pain of too many applicants and too little time to review them. Proof: You helped RecruitPro (200-person HR tech) reduce time-to-hire from 45 days to 28 days and improved quality-of-hire scores by 30%. Goal: Get a reply expressing interest.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase",
+        "Opening connects their hiring activity (10+ open roles) to the pain (volume of applicants, time constraints)",
+        "Email uses 'you/your' predominantly",
+        "Specific proof point included (RecruitPro: 45→28 days time-to-hire, 30% quality improvement)",
+        "Single, interest-based CTA",
+        "Email is under 130 words",
+        "No feature dump (don't list all ATS features)",
+        "No AI phrases ('I hope this finds you well', 'leverage', 'best-in-class')",
+        "Voice sounds like a peer who understands HR tech operations",
+        "No request for a 30-minute call"
+      ],
+      "scoring_rubric": {
+        "pass": "Trigger-based opening (hiring activity → pain), peer voice, specific proof, low-friction CTA, under 130 words, no feature dump, no AI phrases",
+        "fail": "Opens with company introduction, lists features, or asks for a meeting directly"
+      }
+    },
+    {
+      "id": "cold_009",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Alex Morgan, Founder at CodeNest (a 15-person bootstrapped startup, no external funding). You're selling DevMonitor - an application monitoring tool. Value prop: As a small bootstrapped team, they can't afford a dedicated DevOps person and need monitoring that's simple and affordable. Proof: You helped TinyDeploy (12-person bootstrapped startup) catch 3 production issues before customers noticed and saved them from what could have been a $50K churn event. Goal: Get a reply. Note: Bootstrapped founder = no BS, no enterprise language, respect their time and intelligence.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase",
+        "Email acknowledges the bootstrapped context (small team, limited resources, no dedicated DevOps)",
+        "No enterprise language ('scalability', 'enterprise-grade', 'SLA', 'dedicated support team')",
+        "Proof point is relevant to a small team (caught issues early, saved revenue)",
+        "CTA is extremely low-friction (one-line reply)",
+        "Email is under 100 words",
+        "Voice is direct and no-BS (no corporate polish)",
+        "Uses contractions",
+        "Does not ask for a meeting",
+        "Every sentence serves the reader (bootstrapped founder's time is precious)"
+      ],
+      "scoring_rubric": {
+        "pass": "Bootstrapped context acknowledged, no enterprise language, relevant proof, ultra-brief, direct voice, no meeting request",
+        "fail": "Uses enterprise language, too long for a busy founder, or proof point isn't relevant to small team context"
+      }
+    },
+    {
+      "id": "cold_010",
+      "skill": "cold-email",
+      "prompt": "Write a cold email to Maria Santos, VP of Sales at CloudBase (a 180-person cloud infrastructure company, recently hired 5 new sales reps). You're selling SalesEdge - an AI-powered sales conversation intelligence platform. Value prop: With 5 new reps, they need to ramp quickly and ensure consistent pitch quality. Proof: You helped InfraCloud (similar cloud infrastructure company) ramp new reps 40% faster and increased demo-to-close rate from 12% to 19%. Goal: Get a reply. Include a subject line.",
+      "verification_criteria": [
+        "Subject line is 2-4 words, lowercase, looks like internal communication",
+        "Opening references the hiring (5 new reps) as a trigger, not as flattery",
+        "Email connects the trigger to the challenge (ramping new reps, maintaining pitch consistency)",
+        "One specific proof point (InfraCloud: 40% faster ramp, 12→19% demo-to-close)",
+        "CTA is interest-based and low-friction",
+        "Email is under 130 words",
+        "No AI-telltale patterns",
+        "Uses contractions",
+        "Email is structured using one of the 4 frameworks (Observation→Problem→Proof→Ask, Question→Value→Ask, Trigger→Insight→Ask, or Story→Bridge→Ask)",
+        "The framework is applied naturally, not forced"
+      ],
+      "scoring_rubric": {
+        "pass": "Subject line correct, trigger-based opening, specific proof, low-friction CTA, under 130 words, uses one of the 4 email frameworks naturally, contractions used",
+        "fail": "No clear framework applied, opens with self-introduction, or proof point is missing"
+      }
+    }
+  ]
+}

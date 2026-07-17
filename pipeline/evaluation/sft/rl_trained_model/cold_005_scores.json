@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.4666666666666667,
+  "actionability": 0.125,
+  "structure": 0.2,
+  "depth": 0.4688,
+  "voice": 0.85,
+  "composite": 0.33021333333333336,
+  "criteria_grades": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no emojis or exclamation points",
+      "passed": false,
+      "evidence": "Subject: 'Revolutionizing Your Ad Spend with AdOptimize \u2013 A Game-Changer for Fashion Brands Like Yours' (14 words, lowercase=False)"
+    },
+    {
+      "text": "Opening references the Vogue feature naturally (not as flattery, but as a trigger for the conversation)",
+      "passed": false,
+      "evidence": "Term coverage: 38% (3/8)"
+    },
+    {
+      "text": "Email connects the trigger (Vogue feature) to the challenge (scaling ad creative testing)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "Specific proof point included (ThreadCraft: 35% ROAS improvement, 10x creative variants)",
+      "passed": true,
+      "evidence": "Term coverage: 50% (4/8)"
+    },
+    {
+      "text": "Single, low-friction CTA",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/2)"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 547 (limit: 120)"
+    },
+    {
+      "text": "No AI-telltale patterns ('I came across', 'I noticed', 'congratulations on')",
+      "passed": false,
+      "evidence": "Banned phrase: 'my name is'"
+    },
+    {
+      "text": "Uses contractions and sounds human",
+      "passed": true,
+      "evidence": "Contractions found: [\"it's\", \"i'm\"]"
+    },
+    {
+      "text": "Every sentence serves the reader (not the sender)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Does not mention your company name until after establishing value",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    }
+  ],
+  "word_count": 547
+}

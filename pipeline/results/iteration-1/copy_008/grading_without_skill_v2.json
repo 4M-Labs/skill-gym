@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_008",
+  "run_id": "copy_008_without_skill",
+  "expectations": [
+    {
+      "text": "Output contains Page Copy, Annotations, and Alternatives sections",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "Headline communicates the outcome (time saved, reports automated) not just the feature name",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Copy addresses the specific pain (2-4 hours weekly on reports)",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Feature is connected to benefit \u00e2\u2020\u2019 outcome chain (auto-generate \u00e2\u2020\u2019 save time \u00e2\u2020\u2019 focus on strategy)",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Copy differentiates from manual report building (the competitor approach)",
+      "passed": true,
+      "evidence": "Term coverage: 67% (4/6)"
+    },
+    {
+      "text": "CTA communicates what they get (e.g., 'Automate My Reports' not 'Try Instant Reports')",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    },
+    {
+      "text": "Subheadline adds a specific detail (time savings, frequency, or ease of setup)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Copy uses 'you/your' more than 'we/our'",
+      "passed": true,
+      "evidence": "you/your: 51, I/we/our: 12"
+    },
+    {
+      "text": "At least one section uses a before/after comparison",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "No exclamation points in body copy",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    }
+  ],
+  "pass_rate": 0.4,
+  "scores": {
+    "specificity": 0.95,
+    "actionability": 0.1,
+    "structure": 0.65,
+    "depth": 0.7003125,
+    "voice": 0.97,
+    "composite": 0.57453125,
+    "word_count": 963
+  }
+}

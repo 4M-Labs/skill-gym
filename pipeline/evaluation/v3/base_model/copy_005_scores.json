@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.35,
+  "actionability": 0.0,
+  "structure": 0.0,
+  "depth": 0.3,
+  "voice": 0.55,
+  "composite": 0.20500000000000002,
+  "criteria_grades": [
+    {
+      "text": "Rewritten headline replaces jargon with clear benefit language",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Body copy uses simple words ('use' not 'utilize', 'help' not 'facilitate')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "No marketing buzzwords remain ('cutting-edge', 'next-generation', 'revolutionize', 'leverage')",
+      "passed": false,
+      "evidence": "Banned phrase: 'streamline'"
+    },
+    {
+      "text": "Copy connects the AI feature to a specific customer outcome (less time prioritizing, better team focus)",
+      "passed": false,
+      "evidence": "Term coverage: 11% (1/9)"
+    },
+    {
+      "text": "Active voice is used throughout the rewrite",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Copy includes a specific proof point or example of the outcome",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "Output includes annotations explaining what was changed and why",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "At least 2 headline alternatives are provided",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "CTA is specific and value-oriented",
+      "passed": true,
+      "evidence": "Term coverage: 50% (1/2)"
+    },
+    {
+      "text": "Rewrite passes the 'read it aloud' test - sounds like a human, not a brochure",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    }
+  ],
+  "word_count": 180
+}

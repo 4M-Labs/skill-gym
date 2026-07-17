@@ -1,0 +1,57 @@
+{
+  "eval_id": "cro_006",
+  "run_id": "cro_006_without_skill",
+  "expectations": [
+    {
+      "text": "Output follows the 4-section CRO format",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "Identifies message mismatch between the ad ('lose 10 pounds in 30 days') and the landing page headline",
+      "passed": true,
+      "evidence": "Term coverage: 67% (6/9)"
+    },
+    {
+      "text": "Recommends headline that mirrors the ad's promise or addresses the specific outcome",
+      "passed": true,
+      "evidence": "Term coverage: 57% (4/7)"
+    },
+    {
+      "text": "Notes the navigation bar undermines single-page focus for paid traffic",
+      "passed": true,
+      "evidence": "Term coverage: 50% (3/6)"
+    },
+    {
+      "text": "Recommends removing or simplifying navigation for this paid landing page",
+      "passed": false,
+      "evidence": "Term coverage: 40% (2/5)"
+    },
+    {
+      "text": "Flags the absence of proof for the '10 pounds in 30 days' claim (testimonials, before/after, case studies)",
+      "passed": false,
+      "evidence": "Term coverage: 44% (4/9)"
+    },
+    {
+      "text": "Identifies 'Welcome to FitTrack Pro' as a weak, company-centric headline",
+      "passed": true,
+      "evidence": "Term coverage: 50% (3/6)"
+    },
+    {
+      "text": "Provides at least 2 alternative headlines using the outcome-focused or specificity pattern",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Recommends adding a risk reversal (free trial, money-back guarantee)",
+      "passed": true,
+      "evidence": "Term coverage: 71% (5/7)"
+    },
+    {
+      "text": "At least one test idea addresses the message match or navigation removal",
+      "passed": true,
+      "evidence": "Term coverage: 50% (3/6)"
+    }
+  ],
+  "pass_rate": 0.8
+}

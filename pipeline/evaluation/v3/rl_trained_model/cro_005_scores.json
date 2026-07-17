@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.0,
+  "specificity": 0.6000000000000001,
+  "actionability": 0.1,
+  "structure": 0.35,
+  "depth": 0.3735294117647059,
+  "voice": 0.94,
+  "composite": 0.32385294117647057,
+  "criteria_grades": [
+    {
+      "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Identifies that a single bottom-of-post CTA misses multiple stopping points",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Recommends adding inline CTAs at natural content breaks (e.g., after benefits 3, 6, 9)",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Suggests a content-specific lead magnet (e.g., meditation starter guide, daily meditation checklist)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "Notes the generic newsletter signup and suggests making it topic-relevant",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/7)"
+    },
+    {
+      "text": "Recommends a contextual CTA that matches the blog post topic (not generic app download)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "Provides at least 2 alternative CTA copy options tied to meditation benefits",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Suggests adding a 'Related Posts' section to increase session depth",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "At least one recommendation addresses capturing visitors who aren't ready to download yet",
+      "passed": false,
+      "evidence": "Term coverage: 38% (3/8)"
+    },
+    {
+      "text": "CTA alternatives avoid weak patterns like 'Learn More' or 'Click Here'",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    }
+  ],
+  "word_count": 420
+}

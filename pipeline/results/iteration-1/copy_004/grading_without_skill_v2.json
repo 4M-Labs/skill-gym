@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_004",
+  "run_id": "copy_004_without_skill",
+  "expectations": [
+    {
+      "text": "Output contains Headline, Subheadline, Primary CTA, and at least 2 alternative headlines",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Headline addresses the specific pain (shared spreadsheets/sticky notes) or the desired outcome (security without complexity)",
+      "passed": false,
+      "evidence": "Term coverage: 27% (3/11)"
+    },
+    {
+      "text": "Copy does NOT use fear-based messaging ('Your passwords are at risk!', 'Hackers are targeting you')",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "Subheadline is 1-2 sentences and adds a specific detail (price, feature count, or setup time)",
+      "passed": false,
+      "evidence": "Term coverage: 22% (2/9)"
+    },
+    {
+      "text": "CTA follows the [Action Verb] + [What They Get] formula",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Copy is written in customer language (not 'enterprise-grade encryption' or 'zero-knowledge architecture')",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "At least one alternative headline uses the '{Achieve outcome} without {pain point}' formula",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "No exclamation points in any copy",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "Active voice used throughout",
+      "passed": false,
+      "evidence": "Term coverage: 33% (1/3)"
+    },
+    {
+      "text": "Annotations explain the reasoning behind the primary headline choice",
+      "passed": false,
+      "evidence": "Missing annotations"
+    }
+  ],
+  "pass_rate": 0.3,
+  "scores": {
+    "specificity": 0.75,
+    "actionability": 0.23333333333333334,
+    "structure": 0.65,
+    "depth": 0.5651418439716313,
+    "voice": 0.91,
+    "composite": 0.5166808510638299,
+    "word_count": 502
+  }
+}

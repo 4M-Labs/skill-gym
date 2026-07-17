@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.1,
+  "specificity": 0.75,
+  "actionability": 0.1,
+  "structure": 0.65,
+  "depth": 0.5183333333333333,
+  "voice": 0.97,
+  "composite": 0.44133333333333336,
+  "criteria_grades": [
+    {
+      "text": "Output follows the 4-section format (Quick Wins, High-Impact Changes, Test Ideas, Copy Alternatives)",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Identifies that the page lacks guidance on 'which plan is right for me'",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Recommends adding plan descriptions or use-case matching (e.g., 'Best for solo developers')",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Notes the absence of annual pricing toggle and suggests adding one",
+      "passed": false,
+      "evidence": "Term coverage: 43% (3/7)"
+    },
+    {
+      "text": "Identifies 'Get Started' as a generic CTA and provides plan-specific alternatives",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Recommends adding a guarantee or risk reversal",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "Suggests adding social proof (customer count, testimonials, logos) near pricing",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Provides at least 2 CTA alternatives that communicate value (not just action)",
+      "passed": false,
+      "evidence": "Missing alternatives"
+    },
+    {
+      "text": "Recommends adding an FAQ section addressing common pricing objections",
+      "passed": true,
+      "evidence": "Term coverage: 57% (4/7)"
+    },
+    {
+      "text": "At least one test idea specifically targets the pricing page layout or comparison flow",
+      "passed": false,
+      "evidence": "Term coverage: 17% (1/6)"
+    }
+  ],
+  "word_count": 366
+}

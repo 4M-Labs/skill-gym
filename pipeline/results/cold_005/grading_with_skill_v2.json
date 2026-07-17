@@ -1,0 +1,66 @@
+{
+  "eval_id": "cold_005",
+  "run_id": "cold_005_with_skill",
+  "expectations": [
+    {
+      "text": "Subject line is 2-4 words, lowercase, no emojis or exclamation points",
+      "passed": false,
+      "evidence": "Subject: '# Cold Email - AdOptimize to Elena Vasquez' (8 words, lowercase=False)"
+    },
+    {
+      "text": "Opening references the Vogue feature naturally (not as flattery, but as a trigger for the conversation)",
+      "passed": true,
+      "evidence": "Term coverage: 50% (4/8)"
+    },
+    {
+      "text": "Email connects the trigger (Vogue feature) to the challenge (scaling ad creative testing)",
+      "passed": true,
+      "evidence": "Term coverage: 67% (6/9)"
+    },
+    {
+      "text": "Specific proof point included (ThreadCraft: 35% ROAS improvement, 10x creative variants)",
+      "passed": true,
+      "evidence": "Term coverage: 62% (5/8)"
+    },
+    {
+      "text": "Single, low-friction CTA",
+      "passed": true,
+      "evidence": "Term coverage: 50% (1/2)"
+    },
+    {
+      "text": "Email is under 120 words",
+      "passed": false,
+      "evidence": "Word count: 534 (limit: 120)"
+    },
+    {
+      "text": "No AI-telltale patterns ('I came across', 'I noticed', 'congratulations on')",
+      "passed": false,
+      "evidence": "Banned phrase: 'i hope this email finds you well'"
+    },
+    {
+      "text": "Uses contractions and sounds human",
+      "passed": true,
+      "evidence": "Contractions found: [\"you're\", \"they're\", \"doesn't\", \"couldn't\"]"
+    },
+    {
+      "text": "Every sentence serves the reader (not the sender)",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "Does not mention your company name until after establishing value",
+      "passed": false,
+      "evidence": "Term coverage: 33% (2/6)"
+    }
+  ],
+  "pass_rate": 0.5,
+  "scores": {
+    "specificity": 0.9000000000000001,
+    "actionability": 0.0,
+    "structure": 0.85,
+    "depth": 0.5657142857142857,
+    "voice": 0.85,
+    "composite": 0.5740714285714286,
+    "word_count": 534
+  }
+}

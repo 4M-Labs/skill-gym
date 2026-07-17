@@ -1,0 +1,66 @@
+{
+  "eval_id": "copy_006",
+  "run_id": "copy_006_without_skill",
+  "expectations": [
+    {
+      "text": "Output contains Page Copy organized by section and Annotations",
+      "passed": true,
+      "evidence": "Has explanations"
+    },
+    {
+      "text": "Story of founding connects to customer pain (poor API docs) not just founder bio",
+      "passed": false,
+      "evidence": "Term coverage: 43% (3/7)"
+    },
+    {
+      "text": "Copy includes specific proof points (200+ customers, 1B calls, TechCrunch) in context",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Mission is connected to customer benefit (not just 'we\u00e4\u00bd\u00bf\u00e5\u2018\u00bd\u00e6\u02dc\u00af to democratize API integration')",
+      "passed": false,
+      "evidence": "Term coverage: 14% (1/7)"
+    },
+    {
+      "text": "Copy includes a CTA (the skill says about pages should still have a CTA)",
+      "passed": true,
+      "evidence": "Term coverage: 50% (2/4)"
+    },
+    {
+      "text": "Voice matches the technical audience (no dumbed-down language, but no jargon either)",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "Headline or opening connects to the 'why' of the company",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/5)"
+    },
+    {
+      "text": "No exclamation points",
+      "passed": true,
+      "evidence": "No banned phrases found"
+    },
+    {
+      "text": "At least one section uses specific numbers or outcomes instead of vague claims",
+      "passed": false,
+      "evidence": "Term coverage: 25% (2/8)"
+    },
+    {
+      "text": "Annotations explain voice/tone choices for the technical audience",
+      "passed": true,
+      "evidence": "Has explanations"
+    }
+  ],
+  "pass_rate": 0.4,
+  "scores": {
+    "specificity": 0.9000000000000001,
+    "actionability": 0.0,
+    "structure": 0.65,
+    "depth": 0.6580797101449275,
+    "voice": 0.91,
+    "composite": 0.5343079710144928,
+    "word_count": 832
+  }
+}

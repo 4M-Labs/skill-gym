@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.2,
+  "specificity": 0.75,
+  "actionability": 0.0,
+  "structure": 0.65,
+  "depth": 0.38883333333333336,
+  "voice": 0.6,
+  "composite": 0.3963833333333333,
+  "criteria_grades": [
+    {
+      "text": "All 7 CTAs are provided and each is unique (not copy-pasted across pages)",
+      "passed": true,
+      "evidence": "Unique CTAs found: 4"
+    },
+    {
+      "text": "No CTA uses weak patterns ('Sign Up', 'Learn More', 'Submit', 'Click Here', 'Get Started')",
+      "passed": false,
+      "evidence": "Banned phrase: 'streamline'"
+    },
+    {
+      "text": "Each CTA follows the [Action Verb] + [What They Get] formula",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/4)"
+    },
+    {
+      "text": "CTAs are context-appropriate (e.g., Pricing page CTA mentions pricing or plan, Features page CTA mentions trying the feature)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "CTAs match the friendly/reassuring voice (not corporate or aggressive)",
+      "passed": false,
+      "evidence": "Term coverage: 20% (1/5)"
+    },
+    {
+      "text": "At least one CTA includes a qualifier (e.g., 'Free', 'My', 'Your')",
+      "passed": false,
+      "evidence": "Term coverage: 0% (0/6)"
+    },
+    {
+      "text": "No exclamation points in any CTA",
+      "passed": false,
+      "evidence": "Banned phrase: 'streamline'"
+    },
+    {
+      "text": "CTAs are short (under 6 words each)",
+      "passed": false,
+      "evidence": "Word count: 279 (limit: 6)"
+    },
+    {
+      "text": "Homepage hero CTA is the strongest/most compelling of the set",
+      "passed": false,
+      "evidence": "Term coverage: 33% (1/3)"
+    },
+    {
+      "text": "Annotations explain why each CTA was chosen for its specific page context",
+      "passed": true,
+      "evidence": "Has explanations"
+    }
+  ],
+  "word_count": 279
+}

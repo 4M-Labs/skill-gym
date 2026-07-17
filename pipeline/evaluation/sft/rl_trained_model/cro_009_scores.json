@@ -1,0 +1,62 @@
+{
+  "criteria_pass_rate": 0.3,
+  "specificity": 0.3,
+  "actionability": 0.0,
+  "structure": 0.2,
+  "depth": 0.5,
+  "voice": 0.82,
+  "composite": 0.29700000000000004,
+  "criteria_grades": [
+    {
+      "text": "Output follows the Quick Wins / High-Impact Changes / Test Ideas / Copy Alternatives structure",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Identifies that the page tells company facts but doesn't connect mission to client benefit",
+      "passed": false,
+      "evidence": "Term coverage: 33% (3/9)"
+    },
+    {
+      "text": "Recommends leading with client outcomes instead of company milestones",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Notes the absence of proof points (performance data, client testimonials, AUM growth story)",
+      "passed": false,
+      "evidence": "Term coverage: 30% (3/10)"
+    },
+    {
+      "text": "Recommends adding a differentiator section ('Why GreenLeaf vs. other firms')",
+      "passed": false,
+      "evidence": "Term coverage: 38% (3/8)"
+    },
+    {
+      "text": "Identifies that 'Contact Us' is a high-friction CTA for an about page",
+      "passed": false,
+      "evidence": "Term coverage: 25% (1/4)"
+    },
+    {
+      "text": "Recommends a softer CTA or next step (e.g., 'See Our Approach', 'Download Our Impact Report')",
+      "passed": false,
+      "evidence": "Term coverage: 29% (2/7)"
+    },
+    {
+      "text": "Provides at least 2 alternative headlines that connect to investor value",
+      "passed": true,
+      "evidence": "Has alternatives"
+    },
+    {
+      "text": "Suggests adding client logos or advisory board credentials for trust",
+      "passed": false,
+      "evidence": "Term coverage: 12% (1/8)"
+    },
+    {
+      "text": "At least one recommendation addresses the financial advisor referral context",
+      "passed": true,
+      "evidence": "Term coverage: 71% (5/7)"
+    }
+  ],
+  "word_count": 327
+}
